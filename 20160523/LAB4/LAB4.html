@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LAB 4</title>
+
+<style>
+	body {
+		font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	}
+
+	h2
+	{
+		align-content:center;
+		text-align:center;
+		font-variant:small-caps;
+		border-bottom:dashed;
+		padding:10px;
+		border-bottom-color:#FFFFFF;
+		color:#FFFFFF;		
+	}
+	
+	a {
+		text-decoration:none;
+		color:#FFFFFF;
+	}
+	
+	div {width:100%; float: left; margin:5px; border-radius:20px;}
+
+	#header {text-align:center; background-color:#0C4C9A; color:#FFFFFF;}
+	#nav {text-align:right; }
+	
+	#content {width:100%;}
+	
+	#left {background-color:#0E53B1;}
+	#right {
+		background-color: #089FFF; 
+		height:700px; 
+		text-align:center;
+		display:table;
+		}
+	
+	#MyContent {font-size:36px; display:table-cell; vertical-align:middle;}
+	
+	#footer {background-color:#056FD1; text-align:center; vertical-align:middle;}
+	#footer > p {color:#FFFFFF;}
+	
+	img {margin:20px;}
+	
+	#Super {font-size:36px; color:#FFFFFF;}
+	
+	strong {font-size:60px;}
+	
+	@media screen and (max-width:767px)
+	{
+		#left {width:100%;}
+		#right {width:100%;}		
+	}
+	
+	@media screen and (min-width:768px)
+	{
+		#left {width: 30%;}
+		#right {width: 68%;}			
+	}
+</style>
+
+</head>
+
+<body>
+	<div id="header">
+        <p id="Super"><strong>S</strong>OLLAS <strong>T</strong>RANSLATION</p>
+                <span id="nav">
+                    <p><a href="#">English</a> | <a href="#">Deutsch</a> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                </span>            
+    </div>
+    
+	<div id="content">
+    	<div id="left">
+        	<img src="resource/DUCK.jpg" width="90%" alt=""/>
+            <h2><a href="#">Home</a></h2>
+            <h2><a href="#">About</a></h2>
+            <h2><a href="#">Portfolio</a></h2>
+            <h2><a href="#">Services</a></h2>                                    
+            <h2><a href="#">Contact</a></h2>            
+        </div>
+        
+        <div id="right">
+        	<p id="MyContent">
+            	Translation <br>
+                English - Gaelic - German <br>
+                Literary and non-literary texts <br>
+            </p>
+        </div>
+    </div>
+    
+    <div id="footer">
+    	<p>All text &copy; Sollas Translation 2009, photo &copy; Marine Keltie</p>
+        <p>A nice woo site, powered by Wordpress</p>
+    </div>
+</body>
+</html>

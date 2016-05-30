@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+.half-black
+{
+	background: rgba(0,0,0,0.5);
+}
+
+html body
+{
+	margin:0px;
+	padding:0px;
+}
+
+#container
+{
+	background-image:url(../p02pkxly.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin:0px;
+	padding:184px 384px 184px 384px;
+	box-sizing:border-box;
+	height:768px;
+	width:1368px;
+}
+
+#LoginForm
+{	
+	vertical-align:middle;
+	box-sizing:border-box;	
+	background-color:#CB5F61;	
+	height: 400px;
+	width:600px;	
+}
+
+

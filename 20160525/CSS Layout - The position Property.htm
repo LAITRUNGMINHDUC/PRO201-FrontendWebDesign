@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title>CSS Layout - The position Property</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,ASP,XML,DOM,Bootstrap,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand Web bulding tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
+<link rel="icon" href="http://www.w3schools.com/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="CSS%20Layout%20-%20The%20position%20Property_files/w3.css">
+
+<script src="CSS%20Layout%20-%20The%20position%20Property_files/async-ads.js" async=""></script><script src="CSS%20Layout%20-%20The%20position%20Property_files/cse.js" async="" type="text/javascript"></script><script src="CSS%20Layout%20-%20The%20position%20Property_files/gpt.js" type="text/javascript" async=""></script><script src="CSS%20Layout%20-%20The%20position%20Property_files/analytics.js" async=""></script><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script><style type="text/css">:root a[rel="nofollow"],
+:root #mainLeaderboard,
+:root .bottomad,
+:root div[id^="zergnet-widget-"],
+:root div[id^="mainads"],
+:root td[valign="top"] > .mainmenu[style="padding:10px 0 0 0 !important;"],
+:root iframe[src^="http://static.mozo.com.au/strips/"],
+:root script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content,
+:root p[id^="div-gpt-ad-"],
+:root input[onclick^="window.open('http://www.friendlyduck.com/AF_"],
+:root input[onclick^="window.open('http://www.FriendlyDuck.com/AF_"],
+:root img[alt^="Fuckbook"],
+:root iframe[src^="http://cdn2.adexprt.com/"],
+:root iframe[src^="http://cdn1.adexprt.com/"],
+:root iframe[src^="http://ad.yieldmanager.com/"],
+:root iframe[id^="google_ads_iframe"],
+:root iframe[id^="google_ads_frame"],
+:root div[itemtype="http://www.schema.org/WPAdBlock"],
+:root div[itemtype="http://schema.org/WPAdBlock"],
+:root div[id^="proadszone-"],
+:root div[id^="google_dfp_"],
+:root div[id^="dmRosAdWrapper"],
+:root div[id^="div_openx_ad_"],
+:root div[id^="div_ad_stack_"],
+:root div[id^="div-gpt-ad"],
+:root div[id^="div-adtech-ad-"],
+:root div[id^="dfp-slot-"],
+:root div[id^="dfp-ad-"],
+:root div[id^="cns_ads_"],
+:root div[id^="adrotate_widgets-"],
+:root div[id^="acm-ad-tag-"],
+:root div[id^="YFBMSN"],
+:root div[id^="MarketGid"],
+:root div[id^="ADV-SLOT-"],
+:root aside[id^="div-gpt-ad"],
+:root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"],
+:root a[target="_blank"][href^="http://api.taboola.com/"],
+:root a[style="display:block;width:300px;min-height:250px"][href^="http://li.cnet.com/click?"],
+:root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source,
+:root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"],
+:root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"] + .ob_source,
+:root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"],
+:root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source,
+:root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"],
+:root [href^="http://taboola-"][href*="/redirect.php?app.type="],
+:root [href^="http://games.ucoz.ru/"][target="_blank"],
+:root [href^="http://amzn.to/"] > img[src^="data"],
+:root [href^="//t.MtagMonetizationA.com/"],
+:root [href^="//go.ad2up.com/"],
+:root [href^="//ads.ad-center.com/"],
+:root [href^="//adbit.co/?a=Advertise&"],
+:root [href^=" http://n47adshostnet.com/"],
+:root [href^=" http://ads.ad-center.com/"],
+:root a[href*="letsadvertisetogether.com"],
+:root a[href*="emprestimo.eu"],
+:root a[href*="/adrotate-out.php?"],
+:root a[href*=".adsrv.eacdn.com/"],
+:root a[href$="/vghd.shtml"],
+:root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"],
+:root a[data-redirect^="this.href='http://paid.outbrain.com/network/redir?"],
+:root a[data-obtrack^="http://paid.outbrain.com/network/redir?"],
+:root [onclick^="window.open('http://adultfriendfinder.com/search/"],
+:root [lazy-ad="lefttop_banner"]
+{display:none !important;}</style>
+
+<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type="text/javascript">
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+var leaderMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Vertical Tablet ad
+addSize([480, 0], [468, 60]). 
+// Horizontal Tablet
+addSize([750, 0], [728, 90]).
+// Small Desktop
+addSize([993, 0], [468, 60]).
+// Normal Desktop
+addSize([1135, 0], [728, 90]).
+// Large Desktop and bigger ad
+addSize([1425, 0], [[728, 90], [970, 90]]).build();
+gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+defineSizeMapping(leaderMapping).addService(googletag.pubads());
+var skyMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Tablet ad
+addSize([975, 0], [120, 600]). 
+// Desktop
+addSize([1135, 0], [160, 600]).   
+// Large Desktop
+addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+defineSizeMapping(skyMapping).addService(googletag.pubads());
+var bmrMapping = googletag.sizeMapping().
+// Smaller
+addSize([0, 0], [[300, 250], [336, 280]]). 
+// Large Desktop
+addSize([1200, 0], [[300, 250], [336, 280], [970, 250]]).build();
+gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","css");
+googletag.enableServices();
+});
+</script>
+<link rel="stylesheet" type="text/css" href="CSS%20Layout%20-%20The%20position%20Property_files/stdtheme.css">
+<script type="text/javascript" src="CSS%20Layout%20-%20The%20position%20Property_files/jsapi"></script><link rel="stylesheet" href="CSS%20Layout%20-%20The%20position%20Property_files/defaulten.css" type="text/css"><link rel="stylesheet" href="CSS%20Layout%20-%20The%20position%20Property_files/default.css" type="text/css"><script src="CSS%20Layout%20-%20The%20position%20Property_files/defaulten.js" type="text/javascript"></script><style type="text/css">
+.gsc-control-cse {
+font-family: Arial, sans-serif;
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-control-cse .gsc-table-result {
+font-family: Arial, sans-serif;
+}
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+border-color: #D9D9D9;
+}
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+border-color: #2F5BB7;
+background-color: #357AE8;
+background-image: none;
+filter: none;
+}
+.gsc-tabHeader.gsc-tabhInactive {
+border-color: #CCCCCC;
+background-color: #FFFFFF;
+}
+.gsc-tabHeader.gsc-tabhActive {
+border-color: #CCCCCC;
+border-bottom-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-tabsArea {
+border-color: #CCCCCC;
+}
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result:hover,
+.gsc-imageResult:hover {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b {
+color: #1155CC;
+}
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+color: #1155CC;
+}
+.gs-webResult.gs-result a.gs-title:hover,
+.gs-webResult.gs-result a.gs-title:hover b,
+.gs-imageResult a.gs-title:hover,
+.gs-imageResult a.gs-title:hover b {
+color: #1155CC;
+}
+.gs-webResult.gs-result a.gs-title:active,
+.gs-webResult.gs-result a.gs-title:active b,
+.gs-imageResult a.gs-title:active,
+.gs-imageResult a.gs-title:active b {
+color: #1155CC;
+}
+.gsc-cursor-page {
+color: #1155CC;
+}
+a.gsc-trailing-more-results:link {
+color: #1155CC;
+}
+.gs-webResult .gs-snippet,
+.gs-imageResult .gs-snippet,
+.gs-fileFormatType {
+color: #333333;
+}
+.gs-webResult div.gs-visibleUrl,
+.gs-imageResult div.gs-visibleUrl {
+color: #009933;
+}
+.gs-webResult div.gs-visibleUrl-short {
+color: #009933;
+}
+.gs-webResult div.gs-visibleUrl-short {
+display: none;
+}
+.gs-webResult div.gs-visibleUrl-long {
+display: block;
+}
+.gs-promotion div.gs-visibleUrl-short {
+display: none;
+}
+.gs-promotion div.gs-visibleUrl-long {
+display: block;
+}
+.gsc-cursor-box {
+border-color: #FFFFFF;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+border-color: #CCCCCC;
+background-color: #FFFFFF;
+color: #1155CC;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+border-color: #CCCCCC;
+background-color: #FFFFFF;
+color: #1155CC;
+}
+.gsc-webResult.gsc-result.gsc-promotion {
+border-color: #F6F6F6;
+background-color: #F6F6F6;
+}
+.gsc-completion-title {
+color: #1155CC;
+}
+.gsc-completion-snippet {
+color: #333333;
+}
+.gs-promotion a.gs-title:link,
+.gs-promotion a.gs-title:link *,
+.gs-promotion .gs-snippet a:link {
+color: #1155CC;
+}
+.gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited *,
+.gs-promotion .gs-snippet a:visited {
+color: #1155CC;
+}
+.gs-promotion a.gs-title:hover,
+.gs-promotion a.gs-title:hover *,
+.gs-promotion .gs-snippet a:hover {
+color: #1155CC;
+}
+.gs-promotion a.gs-title:active,
+.gs-promotion a.gs-title:active *,
+.gs-promotion .gs-snippet a:active {
+color: #1155CC;
+}
+.gs-promotion .gs-snippet,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+color: #333333;
+}
+.gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl-short {
+color: #009933;
+}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-moz-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:3px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+<body>
+<div class="w3-container top">
+<a class="w3schools-logo" href="http://www.w3schools.com/">w3schools<span class="dotcom">.com</span></a>
+<div class="w3-right toptext w3-wide">THE WORLD'S LARGEST WEB DEVELOPER SITE</div></div>
+<div style="position: fixed; top: 0px;" class="w3-navbar w3-card-2 w3-slim topnav" id="topnav">
+<div style="overflow:auto;">
+<div style="float:left;width:50%;overflow:hidden;height:44px">
+<a href="javascript:void(0);" class="topnav-localicons w3-hide-large w3-left" onclick="open_menu()" title="Menu">☰</a>
+<a href="http://www.w3schools.com/default.asp" class="topnav-icons fa fa-home w3-left" title="Home"></a>
+<a href="http://www.w3schools.com/html/default.asp" class="w3-hide-small" title="HTML Tutorial">HTML</a><a href="http://www.w3schools.com/css/default.asp" class="active" title="CSS Tutorial">CSS</a><a href="http://www.w3schools.com/js/default.asp" class="w3-hide-small" title="JavaScript Tutorial">JAVASCRIPT</a><a href="http://www.w3schools.com/sql/default.asp" class="w3-hide-small" title="SQL Tutorial">SQL</a><a href="http://www.w3schools.com/php/default.asp" class="w3-hide-small" title="PHP Tutorial">PHP</a><a href="http://www.w3schools.com/bootstrap/default.asp" class="w3-hide-small" title="Bootstrap Tutorial">BOOTSTRAP</a><a href="http://www.w3schools.com/jquery/default.asp" class="w3-hide-small" title="jQuery Tutorial">JQUERY</a><a href="http://www.w3schools.com/angular/default.asp" class="w3-hide-small" title="Angular Tutorial">ANGULAR</a><a href="http://www.w3schools.com/xml/default.asp" class="w3-hide-small" title="XML Tutorial">XML</a></div>
+<div style="float:right;width:110px;overflow:hidden;height:44px;">
+<a href="javascript:void(0);" class="topnav-icons fa fa-search w3-right" onclick='w3_open_nav("search")' title="Search W3Schools"></a>
+<a href="javascript:void(0);" class="topnav-icons fa fa-globe w3-right" onclick='openGoogleTranslate();w3_open_nav("translate")' title="Translate W3Schools"></a></div>
+<div class="w3-hide-small" style="float:right;width:30%;overflow:hidden;height:44px;">
+<a id="topnavbtn_tutorials" href="javascript:void(0);" onclick='w3_open_nav("tutorials")' title="Tutorials">TUTORIALS <i style="display: inline;" class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display:none"></i></a><a id="topnavbtn_references" href="javascript:void(0);" onclick='w3_open_nav("references")' title="References">REFERENCES <i style="display: inline;" class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display:none"></i></a><a id="topnavbtn_examples" href="javascript:void(0);" onclick='w3_open_nav("examples")' title="Examples">EXAMPLES <i style="display: inline;" class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display:none"></i></a><a href="http://www.w3schools.com/forum/default.asp">FORUM</a></div></div>
+<div style="display: none;" id="nav_tutorials" class="w3-dropnav w3-light-grey w3-card-2 w3-center"></div>
+<div style="display: none;" id="nav_references" class="w3-dropnav w3-light-grey w3-card-2 w3-center"></div>
+<div style="display: none;" id="nav_examples" class="w3-dropnav w3-light-grey w3-card-2 w3-center"></div>
+<div style="display: none;" id="nav_translate" class="w3-dropnav w3-light-grey w3-card-2 w3-center"></div>
+<div style="display: none;" id="nav_search" class="w3-dropnav w3-light-grey w3-card-2 w3-center"></div></div>
+<div style="padding-top: 44px;" class="w3-row w3-light-grey" id="belowtopnav">
+<div style="padding-top: 44px; display: none;" class="w3-col w3-slim" id="leftmenu">
+<div style="padding-top: 44px;" id="leftmenuinner">
+<div class="w3-light-grey" id="leftmenuinnerinner">
+<a href="javascript:void(0)" onclick="close_menu()" class="w3-closebtn w3-hide-large w3-large" style="padding:3px 12px;">×</a>
+<h2 class="left"><span class="left_h2">CSS</span> Tutorial</h2>
+<a target="_top" href="http://www.w3schools.com/css/default.asp">CSS HOME</a>
+<a target="_top" href="http://www.w3schools.com/css/css_intro.asp">CSS Introduction</a>
+<a target="_top" href="http://www.w3schools.com/css/css_syntax.asp">CSS Syntax</a>
+<a target="_top" href="http://www.w3schools.com/css/css_howto.asp">CSS How To</a>
+<a target="_top" href="http://www.w3schools.com/css/css_colors.asp">CSS Colors</a>
+<a target="_top" href="http://www.w3schools.com/css/css_background.asp">CSS Backgrounds</a>
+<a target="_top" href="http://www.w3schools.com/css/css_border.asp">CSS Borders</a>
+<a target="_top" href="http://www.w3schools.com/css/css_margin.asp">CSS Margins</a>
+<a target="_top" href="http://www.w3schools.com/css/css_padding.asp">CSS Padding</a>
+<a target="_top" href="http://www.w3schools.com/css/css_dimension.asp">CSS Height/Width</a>
+<a target="_top" href="http://www.w3schools.com/css/css_text.asp">CSS Text</a>
+<a target="_top" href="http://www.w3schools.com/css/css_font.asp">CSS Fonts</a>
+<a target="_top" href="http://www.w3schools.com/css/css_link.asp">CSS Links</a>
+<a target="_top" href="http://www.w3schools.com/css/css_list.asp">CSS Lists</a>
+<a target="_top" href="http://www.w3schools.com/css/css_table.asp">CSS Tables</a>
+<a target="_top" href="http://www.w3schools.com/css/css_boxmodel.asp">CSS Box Model</a>
+<a target="_top" href="http://www.w3schools.com/css/css_outline.asp">CSS Outline</a>
+<a target="_top" href="http://www.w3schools.com/css/css_display_visibility.asp">CSS Display</a>
+<a target="_top" href="http://www.w3schools.com/css/css_max-width.asp">CSS Max-width</a>
+<a class="active" target="_top" href="http://www.w3schools.com/css/css_positioning.asp">CSS Position</a>
+<a target="_top" href="http://www.w3schools.com/css/css_float.asp">CSS Float</a>
+<a target="_top" href="http://www.w3schools.com/css/css_inline-block.asp">CSS Inline-block</a>
+<a target="_top" href="http://www.w3schools.com/css/css_align.asp">CSS Align</a>
+<a target="_top" href="http://www.w3schools.com/css/css_combinators.asp">CSS Combinators</a>
+<a target="_top" href="http://www.w3schools.com/css/css_pseudo_classes.asp">CSS Pseudo-class</a>
+<a target="_top" href="http://www.w3schools.com/css/css_pseudo_elements.asp">CSS Pseudo-element</a>
+<a target="_top" href="http://www.w3schools.com/css/css_navbar.asp">CSS Navigation Bar</a>
+<a target="_top" href="http://www.w3schools.com/css/css_dropdowns.asp">CSS Dropdowns</a>
+<a target="_top" href="http://www.w3schools.com/css/css_tooltip.asp">CSS Tooltips</a>
+<a target="_top" href="http://www.w3schools.com/css/css_image_gallery.asp">CSS Image Gallery</a>
+<a target="_top" href="http://www.w3schools.com/css/css_image_transparency.asp">CSS Image Opacity</a>
+<a target="_top" href="http://www.w3schools.com/css/css_image_sprites.asp">CSS Image Sprites</a>
+<a target="_top" href="http://www.w3schools.com/css/css_attribute_selectors.asp">CSS Attr Selectors</a>
+<a target="_top" href="http://www.w3schools.com/css/css_form.asp">CSS Forms</a>
+<a target="_top" href="http://www.w3schools.com/css/css_counters.asp">CSS Counters</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS3</span></h2>
+<a target="_top" href="http://www.w3schools.com/css/css3_intro.asp">CSS3 Introduction</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_borders.asp">CSS3 Rounded Corners</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_border_images.asp">CSS3 Border Images</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_backgrounds.asp">CSS3 Backgrounds</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_colors.asp">CSS3 Colors</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_gradients.asp">CSS3 Gradients</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_shadows.asp">CSS3 Shadows</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_text_effects.asp">CSS3 Text</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_fonts.asp">CSS3 Fonts</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_2dtransforms.asp">CSS3 2D Transforms</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_3dtransforms.asp">CSS3 3D Transforms</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_transitions.asp">CSS3 Transitions</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_animations.asp">CSS3 Animations</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_images.asp">CSS3 Images</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_buttons.asp">CSS3 Buttons</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_pagination.asp">CSS3 Pagination</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_multiple_columns.asp">CSS3 Multiple Columns</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_user_interface.asp">CSS3 User Interface</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_box-sizing.asp">CSS3 Box Sizing</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_flexbox.asp">CSS3 Flexbox</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_mediaqueries.asp">CSS3 Media Queries</a>
+<a target="_top" href="http://www.w3schools.com/css/css3_mediaqueries_ex.asp">CSS3 MQ Examples</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS</span> Responsive</h2>
+<a target="_top" href="http://www.w3schools.com/css/css_rwd_intro.asp">RWD Intro</a>
+<a target="_top" href="http://www.w3schools.com/css/css_rwd_viewport.asp">RWD Viewport</a>
+<a target="_top" href="http://www.w3schools.com/css/css_rwd_grid.asp">RWD Grid View</a>
+<a target="_top" href="http://www.w3schools.com/css/css_rwd_mediaqueries.asp">RWD Media Queries</a>
+<a target="_top" href="http://www.w3schools.com/css/css_rwd_images.asp">RWD Images</a>
+<a target="_top" href="http://www.w3schools.com/css/css_rwd_videos.asp">RWD Videos</a>
+<a target="_top" href="http://www.w3schools.com/css/css_rwd_frameworks.asp">RWD Frameworks</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS</span> Examples</h2>
+<a target="_top" href="http://www.w3schools.com/css/css_examples.asp">CSS Examples</a>
+<a target="_top" href="http://www.w3schools.com/css/css_quiz.asp">CSS Quiz</a>
+<a target="_top" href="http://www.w3schools.com/css/css_exam.asp">CSS Certificate</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS</span> References</h2>
+<a target="_top" href="http://www.w3schools.com/cssref/default.asp">CSS Reference</a>
+<a target="_top" href="http://www.w3schools.com/cssref/css_selectors.asp">CSS Selectors</a>
+<a target="_top" href="http://www.w3schools.com/cssref/css_functions.asp">CSS Functions</a>
+<a target="_top" href="http://www.w3schools.com/cssref/css_ref_aural.asp">CSS Reference Aural</a>
+<a target="_top" href="http://www.w3schools.com/cssref/css_websafe_fonts.asp">CSS Web Safe Fonts</a>
+<a target="_top" href="http://www.w3schools.com/cssref/css_animatable.asp">CSS Animatable</a>
+<a target="_top" href="http://www.w3schools.com/cssref/css_units.asp">CSS Units</a>
+<a target="_top" href="http://www.w3schools.com/cssref/css_pxtoemconversion.asp">CSS PX-EM Converter</a>
+<a target="_top" href="http://www.w3schools.com/cssref/css_colors.asp">CSS Colors</a>
+<a target="_top" href="http://www.w3schools.com/cssref/css_colors_legal.asp">CSS Color Values</a>
+<a target="_top" href="http://www.w3schools.com/colors/colors_names.asp">CSS Color Names</a>
+<a target="_top" href="http://www.w3schools.com/cssref/css3_browsersupport.asp">CSS3 Browser Support</a><br><br></div></div>&nbsp;</div>
+<div class="w3-rest">
+<div class="w3-row w3-white">
+<div class="w3-col l10 m12" id="main">
+<div id="mainLeaderboard" style="overflow: hidden; display: none ! important;">
+<!-- MainLeaderboard-->
+<div style="display: none ! important;" id="div-gpt-ad-1422003450156-2">
+<script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+</div></div>
+<h1>CSS <span class="color_h1">Layout - The position</span> Property</h1>
+<div style="visibility: visible;" class="nav">
+<div class="prev"><a style="visibility: visible;" class="chapter" href="http://www.w3schools.com/css/css_max-width.asp">« Previous</a></div>
+<!--<div class="video" style="float:left;"><a class="chapter" style="font-size:15px" href="http://youtu.be/kowh52NmZis" target="_blank">Watch video of this tutorial</a></div>-->
+<div class="next"><a style="visibility: visible;" class="chapter" href="http://www.w3schools.com/css/css_float.asp">Next Chapter »</a></div>
+</div>
+<hr>
+<p class="intro">The <code>position</code> property specifies the type of 
+positioning method used for an element (static, relative, fixed or absolute).</p>
+<hr>
+
+<h2>The position Property</h2>
+<p>The <code>position</code> property specifies the type of positioning method used for an element.</p>
+<p>There are four different position values: </p>
+<ul>
+	<li><code>static</code></li>
+	<li><code>relative</code></li>
+	<li><code>fixed</code></li>
+	<li><code>absolute</code></li>
+</ul>
+<p>Elements are then positioned using the top, bottom, left, and right 
+properties. However, these properties will not work unless the <code>position</code> 
+property is set first. They also work differently depending on the position 
+value.</p>
+<hr>
+
+<h2>position: static;</h2>
+<p>HTML elements are positioned static by default.</p>
+<p>Static positioned elements are not affected by the top, bottom, left, and right properties.</p>
+<p>An element with <code>position: static;</code> is not positioned in any special way; it is 
+always positioned according to the normal flow of the page:</p>
+<div class="w3-theme-border" style="border-width:3px;border-style:solid;position:static;">
+This &lt;div&gt; element has position: static;</div>
+<br>
+<p>Here is the CSS that is used:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+	div.static <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; position<span style="color:mediumblue"><span style="color:black">:</span> static<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; border<span style="color:mediumblue"><span style="color:black">:</span> 3px solid #73AD21<span style="color:black">;</span></span><br></span><span style="color:black">}</span></span></div>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_position_static" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>position: relative;</h2>
+<p>An element with <code>position: relative;</code> is positioned relative to its normal position.</p>
+<p>Setting the top, right, bottom, and left properties of a relatively-positioned element will cause
+it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the 
+element.</p>
+<div class="w3-theme-border" style="border-width:3px;border-style:solid;position:relative;left:30px;">
+This &lt;div&gt; element has position: relative;
+</div>
+<br>
+<p>Here is the CSS that is used:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+	div.relative <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; position<span style="color:mediumblue"><span style="color:black">:</span> relative<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; 
+	left<span style="color:mediumblue"><span style="color:black">:</span> 30px<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; border<span style="color:mediumblue"><span style="color:black">:</span> 3px solid #73AD21<span style="color:black">;</span></span><br></span><span style="color:black">}</span></span></div>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_position_relative" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>position: fixed;</h2>
+<p>An element with <code>position: fixed;</code> is positioned relative to the viewport, which means it always 
+stays in the same place even if the page is scrolled. The top, 
+right, bottom, and left properties are used to position the element.</p>
+<p>A fixed element does not leave a gap in the page where it would normally have been located.</p>
+<p>Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+	div.fixed <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; position<span style="color:mediumblue"><span style="color:black">:</span> fixed<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; 
+	bottom<span style="color:mediumblue"><span style="color:black">:</span> 0<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; right<span style="color:mediumblue"><span style="color:black">:</span> 0<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; width<span style="color:mediumblue"><span style="color:black">:</span> 
+	300px<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; border<span style="color:mediumblue"><span style="color:black">:</span> 3px solid #73AD21<span style="color:black">;</span></span><br></span><span style="color:black">}</span></span></div>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_position_fixed" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+</div>
+<div class="w3-theme-border" style="border-width:3px;border-style:solid;position:fixed;bottom:0;right:0;width:300px;">
+This &lt;div&gt; element has position: fixed;</div>
+<hr>
+
+<h2>position: absolute;</h2>
+<p>An element with <code>position: absolute;</code> is positioned relative to the nearest positioned ancestor 
+(instead of positioned relative to the viewport, like fixed).</p>
+<p>However; if an absolute positioned element has no positioned ancestors, 
+it uses the document body, and moves along with page scrolling.</p>
+<p><strong>Note:</strong> A "positioned" element is one whose position is anything except 
+<code>static</code>.</p>
+<p>Here is a simple example:</p>
+
+<div class="w3-theme-border" style="border-width:3px;border-style:solid;position: relative;width: 400px;height: 200px;">
+This &lt;div&gt; element has position: relative;
+
+<div class="w3-theme-border" style="border-width:3px;border-style:solid;position: absolute;top: 80px;right: 0;width: 200px;height: 100px;">
+This &lt;div&gt; element has position: absolute;
+</div>
+</div>
+<br>
+
+<p>Here is the CSS that is used:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+	div.relative <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; position<span style="color:mediumblue"><span style="color:black">:</span> relative<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; 
+	width<span style="color:mediumblue"><span style="color:black">:</span> 400px<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; height<span style="color:mediumblue"><span style="color:black">:</span> 200px<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; border<span style="color:mediumblue"><span style="color:black">:</span> 3px solid #73AD21<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+	<br><br>
+	div.absolute <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; position<span style="color:mediumblue"><span style="color:black">:</span> absolute<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+	top<span style="color:mediumblue"><span style="color:black">:</span> 80px<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; right<span style="color:mediumblue"><span style="color:black">:</span> 0<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; width<span style="color:mediumblue"><span style="color:black">:</span> 200px<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; height<span style="color:mediumblue"><span style="color:black">:</span> 100px<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; border<span style="color:mediumblue"><span style="color:black">:</span> 3px solid #73AD21<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+	</span></div>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_position_absolute" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Overlapping Elements</h2>
+<p>When elements are positioned, they can overlap other elements.</p>
+<p>The <code>z-index</code> property specifies the stack order of an element (which element should be placed in front of, or behind, the others).</p>
+<p>An element can have a positive or negative stack order:</p>
+
+<div class="w3-example w3-white" style="position:relative;padding:80px">
+<h1 style="position:absolute;left:35px;top:15px;z-index:2;">This is a heading</h1>
+<img style="position:absolute;left:30px;top:15px;z-index:1;" src="CSS%20Layout%20-%20The%20position%20Property_files/w3css.gif" height="140" width="100">
+<p style="position:absolute;left:35px;top:65px;z-index:2;">Because the image has a z-index of -1, it will be placed behind the text.</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+img
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+position<span style="color:mediumblue"><span style="color:black">:</span> absolute<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+left<span style="color:mediumblue"><span style="color:black">:</span> 0px<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+top<span style="color:mediumblue"><span style="color:black">:</span> 0px<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+z-index<span style="color:mediumblue"><span style="color:black">:</span> -1<span style="color:black">;</span></span><br>
+</span><span style="color:black">}</span></span></div>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_zindex" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+</div>
+<p>An element with greater stack order is always in front of an element with a lower stack order.</p>
+<table class="lamp"><tbody><tr>
+<th style="width:34px"><img src="CSS%20Layout%20-%20The%20position%20Property_files/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td><strong>Note:</strong> If two positioned elements overlap without a <code>z-index</code> 
+specified, the element positioned last in the HTML code will be shown on top.</td>
+</tr></tbody></table>
+<hr>
+
+<h2>Positioning Text In an Image</h2>
+<p>How to position text over an image:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="notranslate">
+  <div style="position:relative;text-align:center;">
+    <img src="CSS%20Layout%20-%20The%20position%20Property_files/trolltunga.jpg" alt="Norway" style="width:100%;height:auto;opacity:0.3">
+    <div style="position:absolute;bottom:8px;left:16px;font-size:18px">Bottom Left</div>
+    <div style="position:absolute;top:8px;left:16px;font-size:18px">Top Left</div>
+    <div style="position:absolute;top:8px;right:16px;font-size:18px">Top Right</div>
+    <div style="position:absolute;bottom:8px;right:16px;font-size:18px">Bottom Right</div>
+    <div style="position:absolute;left:0%;top:50%;width:100%;font-size:18px">Centered</div>
+  </div>
+</div>
+
+<p style="font-size:17px;">Try it Yourself:</p>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_top_left" class="w3-btn w3-margin-bottom">Top Left »</a>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_top_right" class="w3-btn w3-margin-bottom">Top Right »</a>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_bottom_left" class="w3-btn w3-margin-bottom">Bottom Left »</a>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_bottom_right" class="w3-btn w3-margin-bottom">Bottom Right »</a>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center" class="w3-btn w3-margin-bottom">Centered »</a>
+</div>
+<hr>
+
+<div class="tryit_ex">
+<img src="CSS%20Layout%20-%20The%20position%20Property_files/tryitimg.gif" style="width:40px;height:46px" alt="Examples">
+<h2>More Examples</h2>
+</div>
+
+<p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_clip">Set the shape of an element</a><br>
+This example demonstrates how to set the shape of an element. The element is clipped into this shape, and displayed.</p>
+
+<p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_overflow">How to show overflow in an element using scroll</a><br>
+This example demonstrates how to set the overflow property to create a 
+scroll bar when an element's content is too big to fit in a specified 
+area.</p>
+
+<p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_pos_overflow_auto">How to set the browser to automatically handle overflow</a><br>
+This example demonstrates how to set the browser to automatically handle overflow.</p>
+
+<p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_cursor">Change the cursor</a><br>
+This example demonstrates how to change the cursor.</p>
+
+<hr>
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_positioning1" target="_blank">Exercise 1 »</a>&nbsp;
+<a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_positioning2" target="_blank">Exercise 2 »</a>&nbsp;
+<a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_positioning3" target="_blank">Exercise 3 »</a>&nbsp;
+<a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_positioning4" target="_blank">Exercise 4 »</a>&nbsp;
+<a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_positioning5" target="_blank">Exercise 5 »</a>
+</p>
+
+<hr>
+<h2>All CSS Positioning Properties</h2>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:20%">Property</th>
+    <th style="width:55%">Description</th>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/pr_pos_bottom.asp">bottom</a></td>
+    <td>Sets the bottom margin edge for a positioned box</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/pr_pos_clip.asp">clip</a></td>
+    <td>Clips an absolutely positioned element</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/pr_class_cursor.asp">cursor</a></td>
+    <td>Specifies the type of cursor to be displayed</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/pr_pos_left.asp">left</a></td>
+    <td>Sets the left margin edge for a positioned box</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/pr_pos_overflow.asp">overflow</a></td>
+    <td>Specifies what happens if content overflows an element's box</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/css3_pr_overflow-x.asp">overflow-x</a></td>
+    <td>Specifies what to do with the left/right edges of the content if it overflows the element's content area</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/css3_pr_overflow-y.asp">overflow-y</a></td>
+    <td>Specifies what to do with the top/bottom edges of the content if it overflows the element's content area</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/pr_class_position.asp">position</a></td>
+    <td>Specifies the type of positioning for an element</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/pr_pos_right.asp">right</a></td>
+    <td>Sets the right margin edge for a positioned box</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/pr_pos_top.asp">top</a></td>
+    <td>Sets the top margin edge for a positioned box</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/pr_pos_z-index.asp">z-index</a></td>
+    <td>Sets the stack order of an element</td>
+  </tr>
+</tbody></table>
+<br>
+<div style="visibility: visible;" class="nav">
+<div class="prev"><a style="visibility: visible;" class="chapter" href="http://www.w3schools.com/css/css_max-width.asp">« Previous</a></div>
+<!--<div class="video" style="float:left;"><a class="chapter" style="font-size:15px" href="http://youtu.be/kowh52NmZis" target="_blank">Watch video of this tutorial</a></div>-->
+<div class="next"><a style="visibility: visible;" class="chapter" href="http://www.w3schools.com/css/css_float.asp">Next Chapter »</a></div>
+</div>
+</div>
+<div class="w3-col l2 m12" id="right">
+
+<div class="sidesection">
+<div id="skyscraper">
+<div style="display: none ! important;" id="div-gpt-ad-1422003450156-5">
+<script>
+ googletag.cmd.push(function() {
+ googletag.display('div-gpt-ad-1422003450156-5');
+ });
+ </script> 
+</div>
+</div>
+</div>
+
+<div class="sidesection">
+<h3>W3SCHOOLS EXAMS</h3>
+<a target="_blank" href="http://www.w3schools.com/cert/default.asp">
+HTML, CSS, JavaScript, PHP, jQuery, Bootstrap and XML Certifications</a>
+</div>
+
+<div class="sidesection">
+<h3>COLOR PICKER</h3>
+<a href="http://www.w3schools.com/colors/colors_picker.asp">
+<img src="CSS%20Layout%20-%20The%20position%20Property_files/colorpicker.gif" alt="colorpicker"></a>
+</div>
+
+<div class="sidesection">
+<h3>LEARN MORE:</h3>
+<p>
+<a href="http://www.w3schools.com/colors/colors_converter.asp">Color Converter</a><br>
+<a href="http://www.w3schools.com/howto/howto_google_maps.asp">Google Maps</a><br>
+<a href="http://www.w3schools.com/howto/howto_css_animate_buttons.asp">Animated Buttons</a><br>
+<a href="http://www.w3schools.com/howto/howto_css_modals.asp">Modal Boxes</a><br>
+<a href="http://www.w3schools.com/howto/howto_css_modal_images.asp">Modal Images</a><br>
+<a href="http://www.w3schools.com/howto/howto_css_tooltip.asp">Tooltips</a><br>
+<a href="http://www.w3schools.com/howto/howto_css_loader.asp">Loaders</a><br>
+<a href="http://www.w3schools.com/howto/howto_js_animate.asp">JS Animations</a><br>
+<a href="http://www.w3schools.com/howto/howto_js_progressbar.asp">Progress Bars</a><br>
+<a href="http://www.w3schools.com/howto/howto_js_dropdown.asp">Dropdowns</a><br>
+<a href="http://www.w3schools.com/howto/howto_js_slideshow.asp">Slideshow</a><br>
+<a href="http://www.w3schools.com/howto/howto_js_sidenav.asp">Side Navigation</a><br>
+<a href="http://www.w3schools.com/howto/howto_html_include.asp">HTML Includes</a><br>
+<a href="http://www.w3schools.com/w3css/w3css_color_palettes.asp">Color Palettes</a><br>
+<a href="http://www.w3schools.com/w3css/w3css_code.asp">Code Coloring</a>
+</p>
+</div>
+
+<div class="sidesection">
+<h3>SHARE THIS PAGE</h3>
+<div style="visibility: visible;" class="w3-text-grey sharethis">
+<script>
+<!--
+try{
+loc=location.pathname;
+if (loc.toUpperCase().indexOf(".ASP")<0) loc=loc+"default.asp";
+txt='<a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com'+loc+'" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>';
+txt=txt+'<a href="http://twitter.com/home?status=Currently reading http://www.w3schools.com'+loc+'" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a>';
+txt=txt+'<a href="https://plus.google.com/share?url=http://www.w3schools.com'+loc+'" target="_blank" title="Google+"><span class="fa fa-google-plus-square fa-2x"></span></a>';
+document.write(txt);
+} catch(e) {}
+//-->
+</script><a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com/css/css_positioning.asp" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a><a href="http://twitter.com/home?status=Currently%20reading%20http://www.w3schools.com/css/css_positioning.asp" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a><a href="https://plus.google.com/share?url=http://www.w3schools.com/css/css_positioning.asp" target="_blank" title="Google+"><span class="fa fa-google-plus-square fa-2x"></span></a>
+</div>
+</div>
+
+<div style="visibility: visible;" class="sidesection w3-text-grey sharethis">
+<a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook">
+<span class="fa fa-thumbs-o-up fa-2x"></span></a>
+<div id="fblikeframe">
+<div id="popupframe"></div>
+<div id="popupDIV"></div>
+</div>
+</div>       
+
+</div>
+</div>
+<div class="footer w3-container w3-white">      
+
+<hr>
+<div style="overflow:auto">
+<!-- BottomMediumRectangle -->
+<div style="display: none ! important;" class="bottomad" id="div-gpt-ad-1422003450156-0">
+<script type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+</script>
+</div>
+<!-- RightBottomMediumRectangle -->
+<div style="display: none ! important;" class="bottomad" id="div-gpt-ad-1422003450156-3">
+<script type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+</script>
+</div>
+</div>
+
+<hr>
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m3 s12">
+<a href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;">REPORT ERROR</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="" target="_blank" onclick="printPage();return false;">PRINT PAGE</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="http://www.w3schools.com/forum/default.asp" target="_blank">FORUM</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="http://www.w3schools.com/about/default.asp" target="_top">ABOUT</a>
+</div>
+</div>
+<hr>
+<div class="w3-light-grey w3-padding w3-center" id="err_form" style="display:none;">
+<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">×</span>     
+<h2>Your Suggestion:</h2>
+<form>
+<div class="w3-group">      
+<label for="err_email">Your E-mail:</label>
+<input class="w3-input" style="width:100%" id="err_email" name="err_email" type="text">
+</div>
+<div class="w3-group">      
+<label for="err_email">Page address:</label>
+<input class="w3-input" style="width:100%" id="err_url" name="err_url" disabled="disabled" type="text">
+</div>
+<div class="w3-group">
+<label for="err_email">Description:</label>
+<textarea rows="10" class="w3-input" id="err_desc" name="err_desc" style="width:100%;"></textarea>
+</div>
+<div class="form-group">        
+<button type="button" onclick="sendErr()">Submit</button>
+</div>
+<br>
+</form>
+</div>
+<div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;">
+<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">×</span>     
+<h2>Thank You For Helping Us!</h2>
+<p>Your message has been sent to W3Schools.</p>
+</div>
+
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Tutorials</h4>
+<a href="http://www.w3schools.com/html/default.asp">HTML Tutorial</a><br>
+<a href="http://www.w3schools.com/css/default.asp">CSS Tutorial</a><br>
+<a href="http://www.w3schools.com/js/default.asp">JavaScript Tutorial</a><br>
+<a href="http://www.w3schools.com/w3css/default.asp">W3.CSS Tutorial</a><br>
+<a href="http://www.w3schools.com/bootstrap/default.asp">Bootstrap Tutorial</a><br>
+<a href="http://www.w3schools.com/sql/default.asp">SQL Tutorial</a><br>
+<a href="http://www.w3schools.com/php/default.asp">PHP Tutorial</a><br>
+<a href="http://www.w3schools.com/jquery/default.asp">jQuery Tutorial</a><br>
+<a href="http://www.w3schools.com/angular/default.asp">Angular Tutorial</a><br>
+<a href="http://www.w3schools.com/xml/default.asp">XML Tutorial</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 References</h4>
+<a href="http://www.w3schools.com/tags/default.asp">HTML Reference</a><br>
+<a href="http://www.w3schools.com/cssref/default.asp">CSS Reference</a><br>
+<a href="http://www.w3schools.com/jsref/default.asp">JavaScript Reference</a><br>
+<a href="http://www.w3schools.com/w3css/w3css_references.asp">W3.CSS Reference</a><br>
+<a href="http://www.w3schools.com/browsers/default.asp">Browser Statistics</a><br>
+<a href="http://www.w3schools.com/php/php_ref_array.asp">PHP Reference</a><br>
+<a href="http://www.w3schools.com/colors/colors_names.asp">HTML Colors</a><br>
+<a href="http://www.w3schools.com/charsets/default.asp">HTML Character Sets</a><br>
+<a href="http://www.w3schools.com/jquery/jquery_ref_selectors.asp">jQuery Reference</a><br>
+<a href="http://www.w3schools.com/angular/angular_ref_directives.asp">AngularJS Reference</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Examples</h4>
+<a href="http://www.w3schools.com/html/html_examples.asp">HTML Examples</a><br>
+<a href="http://www.w3schools.com/css/css_examples.asp">CSS Examples</a><br>
+<a href="http://www.w3schools.com/js/js_examples.asp">JavaScript Examples</a><br>
+<a href="http://www.w3schools.com/w3css/w3css_examples.asp">W3.CSS Examples</a><br>
+<a href="http://www.w3schools.com/js/js_dom_examples.asp">HTML DOM Examples</a><br>
+<a href="http://www.w3schools.com/php/php_examples.asp">PHP Examples</a><br>
+<a href="http://www.w3schools.com/jquery/jquery_examples.asp">jQuery Examples</a><br>
+<a href="http://www.w3schools.com/asp/asp_examples.asp">ASP Examples</a><br>
+<a href="http://www.w3schools.com/xml/xml_examples.asp">XML Examples</a><br>
+<a href="http://www.w3schools.com/svg/svg_examples.asp">SVG Examples</a>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Web Certificates</h4>
+<a href="http://www.w3schools.com/cert/default.asp">HTML Certificate</a><br>
+<a href="http://www.w3schools.com/cert/default.asp">HTML5 Certificate</a><br>
+<a href="http://www.w3schools.com/cert/default.asp">CSS Certificate</a><br>
+<a href="http://www.w3schools.com/cert/default.asp">JavaScript Certificate</a><br>
+<a href="http://www.w3schools.com/cert/default.asp">jQuery Certificate</a><br>
+<a href="http://www.w3schools.com/cert/default.asp">PHP Certificate</a><br>
+<a href="http://www.w3schools.com/cert/default.asp">Bootstrap Certificate</a><br>
+<a href="http://www.w3schools.com/cert/default.asp">XML Certificate</a><br>
+</div>
+</div>        
+</div>        
+
+<hr>
+<div class="w3-center w3-small w3-opacity">
+W3Schools is optimized for learning, testing, and training. Examples 
+might be simplified to improve reading and basic understanding.
+Tutorials, references, and examples are constantly reviewed to avoid 
+errors, but we cannot warrant full correctness of all content.
+While using this site, you agree to have read and accepted our <a href="http://www.w3schools.com/about/about_copyright.asp">terms of use</a>,
+<a href="http://www.w3schools.com/about/about_privacy.asp">cookie and privacy policy</a>.
+<a href="http://www.w3schools.com/about/about_copyright.asp">Copyright 1999-2016</a> by Refsnes Data. All Rights Reserved.<br>
+ <a href="http://www.w3schools.com/w3css/">Powered by W3.CSS</a>.<br><br>
+<a href="http://www.w3schools.com/">
+<img style="width:150px;height:28px;border:0" src="CSS%20Layout%20-%20The%20position%20Property_files/w3schoolscom_gray.gif" alt="W3Schools.com"></a>
+</div>
+<br><br>
+</div>
+</div>
+</div>
+
+<div id="nav_tutorials_content" style="display:none;">
+<span onclick='w3_close_nav("tutorials")' class="w3-closebtn w3-xlarge">×</span>
+<div class="w3-row-padding">
+<div class="w3-col l2 m4">
+<h3>HTML/CSS</h3>
+<a href="http://www.w3schools.com/html/default.asp">Learn HTML</a>
+<a href="http://www.w3schools.com/css/default.asp">Learn CSS</a>
+<a href="http://www.w3schools.com/w3css/default.asp">Learn W3.CSS</a>
+<a href="http://www.w3schools.com/colors/default.asp">Learn Colors</a>
+<a href="http://www.w3schools.com/bootstrap/default.asp">Learn Bootstrap</a>
+</div>
+<div class="w3-col l2 m4">  
+<h3>JavaScript</h3>
+<a href="http://www.w3schools.com/js/default.asp">Learn JavaScript</a>
+<a href="http://www.w3schools.com/jquery/default.asp">Learn jQuery</a>
+<a href="http://www.w3schools.com/jquerymobile/default.asp">Learn jQueryMobile</a>
+<a href="http://www.w3schools.com/appml/default.asp">Learn AppML</a>
+<a href="http://www.w3schools.com/angular/default.asp">Learn AngularJS</a>
+<a href="http://www.w3schools.com/ajax/default.asp">Learn AJAX</a>
+<a href="http://www.w3schools.com/json/default.asp">Learn JSON</a>
+</div>
+<div class="w3-col l2 m4">   
+<h3>HTML Graphics</h3>
+<a href="http://www.w3schools.com/canvas/default.asp">Learn Canvas</a>
+<a href="http://www.w3schools.com/svg/default.asp">Learn SVG</a>
+<a href="http://www.w3schools.com/icons/default.asp">Learn Icons</a>
+<a href="http://www.w3schools.com/googleapi/default.asp">Learn Google Maps</a>
+<a href="http://www.w3schools.com/games/default.asp">Learn HTML Games</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>Server Side</h3>
+<a href="http://www.w3schools.com/sql/default.asp">Learn SQL</a>
+<a href="http://www.w3schools.com/php/default.asp">Learn PHP</a>
+<a href="http://www.w3schools.com/asp/default.asp">Learn ASP</a>
+<a href="http://www.w3schools.com/aspnet/default.asp">Learn ASP.NET</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>Web Building</h3>
+<a href="http://www.w3schools.com/website/default.asp">Web Building</a>
+<a href="http://www.w3schools.com/browsers/default.asp">Web Statistics</a>
+<a href="http://www.w3schools.com/cert/default.asp">Web Certificates</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>XML Tutorials</h3>
+<a href="http://www.w3schools.com/xml/default.asp">Learn XML</a>
+<a href="http://www.w3schools.com/xsl/default.asp">Learn XSLT</a>
+</div>
+</div>
+</div>
+<div id="nav_references_content" style="display:none;">
+<span onclick='w3_close_nav("references")' class="w3-closebtn w3-xlarge">×</span>
+<div class="w3-row-padding">
+<div class="w3-col l2 m4">
+<h3>HTML</h3>
+<a href="http://www.w3schools.com/tags/default.asp">HTML Tag Reference</a>
+<a href="http://www.w3schools.com/tags/ref_eventattributes.asp">HTML Event Reference</a>
+<a href="http://www.w3schools.com/colors/default.asp">HTML Color Reference</a>
+<a href="http://www.w3schools.com/tags/ref_attributes.asp">HTML Attribute Reference</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>CSS</h3>
+<a href="http://www.w3schools.com/cssref/default.asp">CSS Reference</a>
+<a href="http://www.w3schools.com/cssref/css_selectors.asp">CSS Selector Reference</a>
+<a href="http://www.w3schools.com/w3css/w3css_references.asp">W3.CSS Reference</a>
+<a href="http://www.w3schools.com/bootstrap/bootstrap_ref_css_text.asp">Bootstrap Reference</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>JavaScript</h3>
+<a href="http://www.w3schools.com/jsref/default.asp">JavaScript Reference</a>
+<a href="http://www.w3schools.com/jsref/default.asp">HTML DOM Reference</a>
+<a href="http://www.w3schools.com/jquery/jquery_ref_selectors.asp">jQuery Reference</a>
+<a href="http://www.w3schools.com/jquerymobile/jquerymobile_ref_data.asp">jQuery Mobile Reference</a>
+<a href="http://www.w3schools.com/angular/angular_ref_directives.asp">AngularJS Reference</a>
+<a href="http://www.w3schools.com/googleAPI/google_maps_ref.asp">Google Maps Reference</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>Server Side</h3>
+<a href="http://www.w3schools.com/php/php_ref_array.asp">PHP Reference</a>
+<a href="http://www.w3schools.com/sql/sql_quickref.asp">SQL Reference</a>
+<a href="http://www.w3schools.com/asp/asp_ref_response.asp">ASP Reference</a>
+<a href="http://www.w3schools.com/aspnet/webpages_ref_classes.asp">Razor Reference</a>
+<a href="http://www.w3schools.com/aspnet/aspnet_refhtmlcontrols.asp">ASP.NET Reference</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>XML</h3>
+<a href="http://www.w3schools.com/xml/dom_nodetype.asp">XML Reference</a>
+<a href="http://www.w3schools.com/xsl/xsl_w3celementref.asp">XSLT Reference</a>
+<a href="http://www.w3schools.com/xml/schema_elements_ref.asp">XML Schema Reference</a>
+<a href="http://www.w3schools.com/svg/svg_reference.asp">SVG Reference</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>Charsets</h3>
+<a href="http://www.w3schools.com/charsets/default.asp">HTML Character Sets</a>
+<a href="http://www.w3schools.com/charsets/ref_html_ascii.asp">HTML ASCII</a>
+<a href="http://www.w3schools.com/charsets/ref_html_ansi.asp">HTML ANSI</a>
+<a href="http://www.w3schools.com/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
+<a href="http://www.w3schools.com/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
+<a href="http://www.w3schools.com/charsets/ref_html_symbols.asp">HTML Symbols</a>
+<a href="http://www.w3schools.com/charsets/ref_html_utf8.asp">HTML UTF-8</a>
+</div>
+</div>
+</div>
+<div id="nav_examples_content" style="display:none;">
+<span onclick='w3_close_nav("examples")' class="w3-closebtn w3-xlarge">×</span>
+<div class="w3-row-padding">
+<div class="w3-col l3 m6">
+<h3>HTML/CSS</h3>
+<a href="http://www.w3schools.com/html/html_examples.asp">HTML Examples</a>
+<a href="http://www.w3schools.com/css/css_examples.asp">CSS Examples</a>
+<a href="http://www.w3schools.com/w3css/w3css_examples.asp">W3.CSS Examples</a>
+</div>
+<div class="w3-col l3 m6">
+<h3>JavaScript</h3>
+<a href="http://www.w3schools.com/js/js_examples.asp" target="_top">JavaScript Examples</a>
+<a href="http://www.w3schools.com/js/js_dom_examples.asp" target="_top">HTML DOM Examples</a>
+<a href="http://www.w3schools.com/jquery/jquery_examples.asp" target="_top">jQuery Examples</a>
+<a href="http://www.w3schools.com/jquerymobile/jquerymobile_examples.asp" target="_top">jQuery Mobile Examples</a>
+<a href="http://www.w3schools.com/angular/angular_examples.asp" target="_top">AngularJS Examples</a>
+<a href="http://www.w3schools.com/ajax/ajax_examples.asp" target="_top">AJAX Examples</a>
+</div>
+<div class="w3-col l3 m6">
+<h3>Server Side</h3>
+<a href="http://www.w3schools.com/php/php_examples.asp" target="_top">PHP Examples</a>
+<a href="http://www.w3schools.com/asp/asp_examples.asp" target="_top">ASP Examples</a>
+<a href="http://www.w3schools.com/aspnet/webpages_examples.asp" target="_top">Razor Examples</a>
+<a href="http://www.w3schools.com/aspnet/aspnet_examples.asp" target="_top">.NET Examples</a>
+</div>
+<div class="w3-col l3 m6">
+<h3>XML</h3>
+<a href="http://www.w3schools.com/xml/xml_examples.asp" target="_top">XML Examples</a>
+<a href="http://www.w3schools.com/xsl/xsl_examples.asp" target="_top">XSL Examples</a>
+<a href="http://www.w3schools.com/xsl/xsl_examples.asp" target="_top">XSLT Examples</a>
+<a href="http://www.w3schools.com/xsl/xpath_examples.asp" target="_top">XPath Examples</a>
+<a href="http://www.w3schools.com/xml/schema_example.asp" target="_top">XML Schema Examples</a>
+<a href="http://www.w3schools.com/svg/svg_examples.asp" target="_top">SVG Examples</a>
+</div>
+</div>
+</div>
+<div id="nav_translate_content" style="display:none">
+<span onclick='w3_close_nav("translate")' class="w3-closebtn w3-xlarge">×</span>
+<br><br>Translate w3schools.com:
+<div id="google_translate_element"></div>
+<br>
+</div>
+<div id="nav_search_content" style="display:none">
+<span onclick='w3_close_nav("search")' class="w3-closebtn w3-xlarge">×</span>
+<br><br>
+<div class="searchdiv">
+Search w3schools.com:
+<div id="googleSearch"><div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-en"><div dir="ltr" class="gsc-control-wrapper-cse"><form accept-charset="utf-8" class="gsc-search-box gsc-search-box-tools"><table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-input"><div id="gsc-iw-id1" class="gsc-input-box"><table class="gstl_50 " id="gs_id50" style="width: 100%; padding: 0px;" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsib_a" id="gs_tti50"><input spellcheck="false" dir="ltr" id="gsc-i-id1" style="width: 100%; padding: 0px; border: medium none; margin: 0px; height: auto; outline: medium none; background: rgb(255, 255, 255) url(&quot;http://www.google.com/cse/static/en/google_custom_search_watermark.gif&quot;) no-repeat scroll left center;" title="search" name="search" class="gsc-input" size="10" autocomplete="off" type="text"></td><td class="gsib_b"><div dir="ltr" id="gs_st50" class="gsst_b"><a style="display: none;" href="javascript:void(0)" class="gsst_a"><span id="gs_cb50" class="gscb_a">×</span></a></div></td></tr></tbody></table></div><input id="bgresponse" name="bgresponse" type="hidden"></td><td class="gsc-search-button"><input title="search" class="gsc-search-button gsc-search-button-v2" src="CSS%20Layout%20-%20The%20position%20Property_files/search_box_icon.png" type="image"></td><td class="gsc-clear-button"><div title="clear results" class="gsc-clear-button">&nbsp;</div></td></tr></tbody></table><table class="gsc-branding" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img class="gsc-branding-img" src="CSS%20Layout%20-%20The%20position%20Property_files/small-logo.png"></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div tabindex="0" class="gsc-results-close-btn"></div><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search</div><span class="gs-spacer"> </span></div><div class="gsc-tabsAreaInvisible"></div><div class="gsc-above-wrapper-area-invisible"><table class="gsc-above-wrapper-area-container" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table class="gsc-resultsHeader" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Web</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div title="show one result" class="gsc-result-selector gsc-one-result">&nbsp;</div><div title="show more results" class="gsc-result-selector gsc-more-results">&nbsp;</div><div title="show all results" class="gsc-result-selector gsc-all-results">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div tabindex="0" class="gsc-modal-background-image"></div></div></div></div></div>
+</div>
+<br>
+</div>
+<script src="CSS%20Layout%20-%20The%20position%20Property_files/w3schools_footer.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
+
+
+<table class="gstl_50 gssb_c" style="width: 2px; display: none; top: 3px; left: -1px; position: absolute;" cellpadding="0" cellspacing="0"><tbody><tr><td class="gssb_f"></td><td style="width: 100%;" class="gssb_e"></td></tr></tbody></table></body></html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAB 06</title>
+
+<style>
+	body {
+		font-family: "Segoe UI";
+		background-color: #90F;
+		
+	}
+
+	#container {
+		margin: auto;
+		background-color: #90F;
+	}
+
+	#header {
+		margin: 50px;
+		margin-top:0px;
+		margin-bottom: 20px;
+		font-size: 50px;
+		font-weight: bold;
+		color: white;
+	}
+
+	.rec {
+		display: inline-block;		
+		width: 300px;
+		border: 1px solid black;
+		
+		padding-top: 0px;
+		text-align: center;
+		border-radius: 10px;
+		margin: 20px;
+		margin-left: 70px;
+		background-color: white;
+	}
+
+	.contHeader {
+		padding: 20px;
+		display: block;
+		font-size: 24px;
+		font-weight: bold;	
+		border-bottom: 1px solid black;
+	}
+
+	.contPrice {
+		margin: auto;
+		margin-top: 30px;
+		font-size: 40px;		
+		border: 1px solid black;
+		border-radius: 100%;
+		width: 200px;
+		height: 200px;
+		padding-top: 60px;
+		box-sizing: border-box;
+		display: block;	
+		background-color: black;
+		color: white;
+	}
+
+	.contCont {
+		padding: 20px;
+		margin: auto;
+		margin-top:30px;
+		display: block;		
+		font-size: 18px;	
+	}
+
+	button {
+		margin: auto;
+		margin-top: 30px;
+		display: block;			
+		padding: 10px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-bottom: 20px; 
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+		background-color: purple;
+		border-radius: 10px;
+	}
+
+	.rec:hover
+	{
+		transform: scale(1.1);
+	}
+
+	#footer{		
+		padding:20px;
+		padding-right:100px;
+		font-size: 50px;
+		font-weight: bold;
+	}
+	#right {
+		float: right;
+		color: white;
+		font-family: "Lucida Handwriting";
+	}
+	#left {
+		float: left;	
+		font-family: "Bodoni MT Black";
+	}
+
+
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			Table Model 3
+		</div>
+
+		<div id="main-content">
+			<div id="rec1" class="rec">
+				<span class="contHeader">Solo</span>
+				<div class="contPrice"><span><b>$19</b>/mo</span></div>
+				<span class="contCont">
+					<b>1</b> user <br>
+					<b>Unlimited</b> projects <br>
+					<b>2GB</b> storage
+				</span>			
+				<button>START NOW</button>
+			</div>
+
+			<div id="rec2" class="rec">
+				<span class="contHeader">Team</span>
+				<div class="contPrice"><span><b>$49</b>/mo</span></div>
+				<span class="contCont">
+					<b>10</b> user <br>
+					<b>Unlimited</b> projects <br>
+					<b>20GB</b> storage
+				</span>			
+				<button>START NOW</button>
+			</div>
+
+			<div id="rec3" class="rec">
+				<span class="contHeader">Agency</span>
+				<div class="contPrice"><span><b>$99</b>/mo</span></div>
+				<span class="contCont">
+					<b>Unlimited</b> user <br>
+					<b>Unlimited</b> projects <br>
+					<b>100GB</b> storage
+				</span>			
+				<button>START NOW</button>
+			</div>			
+		</div>
+
+		<div id="footer">
+			<span id="right">CSS Pricing Table for $5</span>
+			<span id="left">fiverr<sup>&reg;</sup></span>
+		</div>
+	</div>
+
+</body>
+</html>

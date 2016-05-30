@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<style>
+	div {float:left}
+	
+	@media screen and (min-width:768px)
+	{		
+		#header {width:100%; height:100%; background-color:#821719;}
+		#footer {width:100%; height:100%; background-color:#9B1A1C;}	
+		#nav {width:30%; height:100px; background-color:#A3A1A1}
+		#content {width:70%; height:100px; background-color:#FBFBFB}
+	}
+	
+	@media screen and (max-width:767px)
+	{
+		#header {width:100%; height:50px; background-color:#821719;}
+		#footer {width:100%; height:50px; background-color:#9B1A1C;}	
+		#nav {width:100%; height:100px; background-color:#A3A1A1}
+		#content {width:100%; height:100px; background-color:#FBFBFB}		
+	}
+	
+</style>
+
+<body>
+	<div id="header"><p>City Galerry</p></div>
+    <div id="nav">
+    	London <br>
+        Paris <br>
+        Tokyo <br>
+    </div>
+    <div id="content">
+    	<h1>London</h1>
+        <p>Lorem ipsum</p>
+    </div>
+    <div id="footer">
+    	<p>Copyright</p>
+    </div>
+</body>
+</html>

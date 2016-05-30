@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	.d1 {background-color:#9F1315; width:100%; height:100px; transition:transform 0.5s ease;}
+	div.d1:hover { transform: translateY(500px);}
+	
+	.d2 {width:100px; height:100px; background-color:#907475; transition: width 5s;}
+	.d3 {width:100px; height:500px; background-color:#E40408; transition: width 5s;}
+	div.d2:hover {width:500px;}
+	.d3 {width: 200px; height:200px; background-color:green; transition: transform 3s;}		
+	.d4 {width: 100px; height: 100px; background-color:#0B37C1; transition: transform 5s;}
+	
+	div.d4:hover {transform:rotate(20deg);}
+	
+	
+</style>
+
+<script>
+	flag = true;
+	function test()
+	{
+		var tag = document.getElementById("menu");
+		if (flag == true)
+		{
+			tag.style.transform = "translateX(0px)";	
+			flag=false;
+		}
+		else
+		{
+			tag.style.transform = "translateX(-200px)";	
+			flag=true;	
+		}
+
+	}
+</script>
+</head>
+
+<body>
+
+	<div class="d1"></div>
+	<div class="d2" onClick="test()"></div>
+	<div class="d3" id="menu"></div>
+	<div class="d4"></div>
+	<div class="d5"></div>                
+    
+    <div class="d6"></div>
+</body>
+</html>

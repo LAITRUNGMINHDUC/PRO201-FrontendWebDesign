@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<style type="text/css">
+	.Common
+	{
+		width: 300px; height: 300px;
+		border:medium solid black;
+	}
+
+	#Child1 
+	{
+		border: 1px solid red;
+		width: 100px; height: 100px;		
+		position: absolute;
+		left: 100px; top: 100px;
+	}
+
+	#Child2
+	{
+		border: 1px solid blue;
+		width: 100px; height: 100px;		
+		position: absolute;
+		left: 100px; top: 100px;
+	}
+
+	#Parent1 {
+		margin: auto; /* Center object */
+		background-color: yellow;
+		z-index: -5; 
+	}
+
+	#Parent2 {
+		margin: auto;
+		position: relative;
+		top: -50px;
+		z-index: -1; /* Below Parent 1 */
+		background-color: red;
+	}
+
+	#con2>img {
+		width: 50px; height: 50px;
+		border: 2px;
+		position: relative; left: 10px;
+	}
+
+	#con1>img {
+		width: 100px; height: 100px;
+		position: fixed; /* Fixed object when scroll */
+		right: 0px; /* Go to the right-est of screen */
+		bottom: 0px;
+	}
+
+	#Parent3 {
+		width: 200px; height: 200px;
+		border: 1px solid black;
+		overflow-y: scroll; 
+	}
+
+	#Parent3>img{
+
+	}
+
+	#Parent4 {
+		position: relative;
+	}
+
+	.LEFT{
+		float: left;
+	}
+
+	.RIGHT {
+		float: right;
+	}
+
+	.NOLEFTRIGHT{
+		clear: both; /* Move seperate */
+		width: 200px; height: 200px;
+		position: relative;
+		left: 100px;
+	}
+
+
+</style>
+
+</head>
+
+<body>
+	<div id="Parent1" class="Common">
+		<div id="Child1">
+			
+		</div>
+	</div>
+
+	<div id="Parent2" class="Common">
+		<div id="Child2">
+			<img src="TEST.png">
+		</div>
+	</div>
+
+	<div id="Parent3" class="Common">
+		<img src="TEST.png">
+		Que
+		Que		
+		Que
+		Que
+		Que
+		Que
+		Que
+		Que
+		Que
+		QueQue
+		Que
+		Que
+		Que
+		Que
+		Que
+		Que
+		Que
+		Que
+		Que
+		Que
+		Que
+		Que
+		c
+
+		Que
+		Que
+	</div>
+
+	<div id="Parent4">
+		<img src="TEST.png" class="LEFT">
+			<img src="TEST.png" class="LEFT">
+				<img src="TEST.png" class="RIGHT">	
+		<img src="TEST.png" class="RIGHT">
+			<img src="TEST.png" class="RIGHT">
+				<img src="TEST.png" class="NOLEFTRIGHT">					
+	</div>
+	
+</body>
+</html>

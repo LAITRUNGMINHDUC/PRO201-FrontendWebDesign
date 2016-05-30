@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LAB 05</title>
+
+<style>
+	@media screen and (min-width: 1280px)
+	{
+		#header-laptop {display:table; width: 100%; margin:auto; }
+		#header-laptop>div{display:table-cell; height: 42px; vertical-align:middle; margin-left:20px;}
+		
+		#search {border: thin solid black; padding:0px; border-radius:5px; width: 75%;}
+		#searchIcon {margin:10px; vertical-align: middle;}
+		#searchInput {vertical-align: middle; border:none; font-size:20px; width: 90%;}
+		
+		#bigRight {padding:0px; margin: 0px; width: 40%; padding-left:20px;}
+		#promote { padding: 10px; vertical-align: middle;}	
+			#promoteText {background-color:#08B011; padding:5px; color:#FFFFFF;}	
+		#cart {padding:5px; vertical-align: middle;}	
+		#account {}
+			#account>img {padding:5px; vertical-align: middle;}
+			#account>span {vertical-align: middle;}
+		
+		#menu>li {
+			display:inline-block;  
+			font-size:20px; 
+			text-align:center; 
+			margin-left: 60px;
+		}
+		
+	.boxgreen {background-color:#12984B; width: 30%; float: left; padding: 10px; margin-top: 100px; margin-left: 200px; border-radius: 5px;}
+	.boxblue {background-color:#1745C3; width: 30%; float: left; padding: 10px; margin-top: 100px; margin-left: 100px; border-radius: 5px;}
+			
+		
+		#header-mobile {visibility:hidden; display:none;}		
+		#nav-mobile {visibility:hidden; display:none;}	
+		
+	div.frame {			
+			width:380px; height:425px; 
+			background-color: #FFFFFF; 
+			float:left; margin: 15px;			
+			border:thin solid #D1D1D1;			
+	}
+	.contentImage {
+		height:300px; width: 380px;
+	}					
+	}		
+	
+	@media screen and (max-width: 1279px)
+	{
+		#header-laptop{display:none;}
+		#nav-laptop{display:none;}		
+		#navigation{transform: translateX(-500px); display:none; transition: transform 1s ease;}
+		#menu>li {
+			list-style:none;  
+			font-size:18px;
+			padding:10px;
+			padding-left:0px;
+		}
+			
+		#header-left{}
+		#header-right{float: right;}
+			#header-right>img {margin-left:20px;}
+		
+	div.frame {			
+			width:100%; height:425px; 
+			background-color: #FFFFFF; 
+			float:left; margin: 15px;			
+			border:thin solid #D1D1D1;			
+	}
+	.contentImage {
+		height:300px; width: 100%; background-size:cover;
+	}		
+		
+		.boxgreen {background-color:#12984B; width: 100%; float: left; padding: 10px; margin-top: 50px; border-radius: 5px;}
+		.boxblue {background-color:#1745C3; width: 100%; float: left; padding: 10px; margin-top: 10px;  border-radius: 5px;}
+		
+		
+				
+	}
+	
+	body {font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; background-color:#C7C7C7; margin:0px; padding:0px;}	
+		
+	div {box-sizing:border-box;}
+	#container {width: 100%;}
+	
+	#nav-header {border-bottom: thin solid #C7C7C7; background-color:#FFFFFF;}
+	#main-content {padding: 50px;}
+	
+	span {font-size: 20px;}
+	
+
+	.avatar {
+		height:30px; width:30px;
+		border-radius:100%;
+	}
+	.icon {
+		height:20px; width:20px;
+		margin:5px;
+	}
+	.left {
+		width: 10%;
+		float:left;
+		margin-right: 5px;
+	}
+	.right {
+		width: 85%;
+		float:left;
+	}
+	
+	.float {float:left;}
+	.float-r {float: right;}
+	
+	.bold {font-weight:bolder;}
+	.small-text {font-size:small;}
+	
+	#header {margin:auto; padding-left:20px; padding-right:20px; padding-top:10px; width:100%;}
+	#logo {margin-right:30px;}		
+		
+		
+	.contentTitle {
+		padding-top:10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		background-color:#FFFFFF;
+		border-bottom: thin dotted #C1C1C1;
+		}
+		.contentTitle>img {
+			margin-right:10px;
+		}
+	.contentMore {
+		padding-top:5px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.contentTextSmall {
+	}
+	
+	
+	#img1 {
+		background-image:url(HINH1.png);
+		margin:auto;
+		display: table-cell;
+		padding: 10px;
+		text-align:center;
+	}
+	.bigText
+	{
+		color:#FFFFFF;
+		font-size:24px;									
+	}
+		#img1>div {
+			border: thin solid transperent;
+			border-radius: 5px;
+			width: 90%;
+			background-color:#FFFFFF;			
+			margin:auto;
+			margin-top:20px;
+			margin-bottom:20px;
+			height:40px;
+			padding: 5px;
+		}
+			#img1>div>select{
+				font-size:18px;
+				width: 100%;
+				border: none;		
+				background-color:#FFFFFF;
+				margin: auto;
+			}
+			#buttonFind {
+				background-color: #08B011 !important;						
+				display: table;
+			}
+			#buttonFind>a
+			{
+				height:30px;
+				font-size:18px;
+				color:#FFFFFF;
+				background-color: #08B011;
+				display:table-cell;
+				vertical-align:middle;				
+			}
+	
+	#img2 {
+		background-image:url(HINH2.png);
+		margin:auto;
+		display: table-cell;
+		padding: 10px;
+		text-align:center;
+		vertical-align:middle;
+	}
+	
+	.time-likes {padding:20px; padding-top:5px;}
+	.likes {
+		float:right;
+	}
+	
+	#img3 {
+		background-image:url(HINH3.jpg);
+	}		
+	
+	.box2 {
+		padding:5px;
+		border-radius: 5px;
+		border: thin solid white;
+		width: 150px;
+		margin:auto;
+		margin-top: 20px;
+		color:#FFFFFF;
+	}
+	
+	#carouselbox {width: 100%; display:table;}
+	#contentBox {text-align:center; vertical-align:middle; padding: 100px;}
+	.bigbigText {font-size:50px; color:#FFFFFF;}
+	#carousel1 {		
+		background-image:url(CASOUREL1.jpg); height:600px;background-repeat:no-repeat; background-size:cover;
+		transition: background-image 1s ease-in-out;}
+</style>
+
+<script>
+	var x = 1; var y = 0;
+	function changeImage()
+	{
+		var tag = document.getElementById("carousel1");
+		if (x==1)
+		{
+			tag.style.backgroundImage = "url(CASOUREL2.jpg)";			
+			x = 2;
+		}
+		else
+		{
+			tag.style.backgroundImage = "url(CASOUREL1.jpg)";
+			x = 1;
+		}				
+	}
+	
+	function Empty()
+	{
+	}
+	
+	function callMenu()
+	{
+		var tag = document.getElementById("navigation");	
+		if (y==0)
+		{
+			tag.style.display = "block";
+			tag.style.transform = "translateX(0px)";
+			y = 1;	
+		}
+		else
+		{		
+			tag.style.transform = "translateX(-500px)";
+			setTimeout(Empty,1000);
+			tag.style.display = "none";	
+			y = 0;					
+		}
+		
+	}
+
+</script>
+
+</head>
+
+<body onLoad="setInterval(changeImage, 5000)">
+	<div id="container">
+    	<div id="nav-header">
+            <div id="header">
+                <div id="header-mobile">
+                	<span id="header-left">
+                    	<img onClick="callMenu()" src="logoHamburger.png" height="30" alt=""/>
+                        <img src="resources/print_logo.png" height="30" alt=""/>
+                    </span>
+                    <span id="header-right">
+                    	<img src="searchIcon.png" height="30" alt=""/>
+                        <img src="iconCart.png" height="30" alt=""/> 
+                        <img src="iconUser.png" height="30" alt=""/>                      
+                    </span>
+                </div>
+                
+                <div id="header-laptop">
+                    <div id="logo" class="float">
+                        <img src="resources/print_logo.png" width="103" height="auto" alt=""/>
+                    </div>
+                    
+                    <div id="search" class="float">
+                        <img id="searchIcon" class="icon" src="searchIcon.png">
+                        <input type="text" id="searchInput" placeholder="Search Photos, Pros, and More">
+                    </div>
+                    
+                    <div id="bigRight">
+                        <div id="promote" class="float">
+                            <span id="promoteText">KITCHEN REMODEL SALE</span>
+                        </div>
+                        
+                        <div id="cart" class="float">
+                            <img id="iconCart" class="icon" src="iconCart.png">                    
+                        </div>
+                        
+                        <div id="account">
+                            <img id="avatar" class="icon" src="iconUser.png">
+                            <span>Your Houzz</span>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            
+            <div id="navigation">
+                <div id="nav-mobile">
+                    <ul id="menu">
+                        <li class="bold"><img src="iconBook.png" width="20" height="20" alt=""/> PHOTOS</li>
+                        <li class="bold"><img src="iconUser.png" width="20" height="20" alt=""/> FIND PROFESSIONALS</li>
+                        <li class="bold"><img src="iconHome.png" width="20" height="20" alt=""/> SHOP DEPARTMENTS</li>
+                        <li class="bold green"><img src="iconCart.png" width="20" height="20" alt=""/> SALES</li>
+                        <li>STORIES</li>
+                        <li>ADVICES</li>
+                    </ul>
+                </div>
+                
+                <div id="nav-laptop">
+                    <ul id="menu">
+                        <li class="bold "><img src="iconBook.png" width="20" height="20" alt=""/> PHOTOS</li>
+                        <li class="bold"><img src="iconUser.png" width="20" height="20" alt=""/> FIND PROFESSIONALS</li>
+                        <li class="bold"><img src="iconHome.png" width="20" height="20" alt=""/> SHOP DEPARTMENTS</li>
+                        <li class="bold green"><img src="iconCart.png" width="20" height="20" alt=""/> SALES</li>
+                        <li class="">STORIES</li>
+                        <li>ADVICES</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="carouselbox">
+				<div id="carousel1">
+                    <div id="contentBox">
+                        <span class="bigbigText bold">THE NEW WAY TO DESIGN YOUR HOME</span>
+                        <div class="bigText boxgreen"><a>Sign Up with Email</a></div>
+                        <div class="bigText boxblue"><a>Sign In with Facebook</a></div>                
+                    </div>                                                                        
+                </div>
+        </div>
+        
+        <div id="main-content">
+        	<div id="breaker">
+        	</div>
+            
+        	<div id="content1" class="frame">
+				<div id="img1" class="contentImage">                	
+					<span class="bold bigText">Search 3,967,943 Home Improvement Pros</span> 
+                    <div>               
+                        <select>
+                          <option>Choose a Service</option>
+                          <option>Love me Like you Do</option>                          
+                          <option>The Rose</option>                          
+                        </select>
+                     </div> 
+                     <div id="buttonFind">
+                     	<a class="box greenBackground">Find Local Pros</a>
+                     </div>
+                   		
+                </div>         
+
+                <div class="contentTitle">
+                	<img src="iconUser.png" width="15" height="15" alt=""/>
+                	<span class="bold small-text">Read thousands of reviews from Houzzers</span>
+                </div>   
+
+                <div class="contentMore small-text">
+                	<div class="left">
+                    	<img class="avatar" src="resources/f563ce7f00c20efb_8673-w40-h40-b0-p0--windowtreatsincnj.jpg">
+                    </div>
+                    
+                    <div class="right">
+                    	<div class="top">
+                        	Patti Egan Rivera
+                        </div>
+                        <div class="bottom">
+                        	"Patti was such a pleasure to work with. She was very professional ABCÁDFSADFSADFSDFSDFLK ỐAGHOÁGH UỔIIWHGIÒG RƯƠIHỒIIG LKSDGJ"
+                        </div>
+                    </div>
+                </div>	
+            </div>
+
+        	<div id="content2" class="frame">
+				<div id="img2" class="contentImage">       
+                	<span class="bold bigText">A Rug Can Make a Room - but What Kind to Choose?</span>
+                    <div class="box2">
+                    	<a class="bold"><img src="iconBook2.png" width="20" height="20" alt=""/> Full Story</a>
+                    </div>
+                </div>
+                
+                <div class="contentTitle">
+                	<img src="iconBook.png" width="15" height="15" alt=""/>                     	
+					<span class="bold small-text">Stories From Houzz</span>
+                </div>   
+                
+                <div class="contentMore">
+                	<span class="small-text">
+					From rugs and pillows to ottomans and accessories, Houzz has everything you need to bring style home.
+                    </span>
+                <div class="time-likes">
+                	<span class="time small-text"> 6 hours ago
+                    </span>
+                    <span class="likes small-text"> 9.3K Saves | 4 Questions
+                    </span>
+                </div>
+                    
+                </div>	
+                
+            </div>
+
+        	<div id="content3" class="frame">
+            	<div id="img3" class="contentImage">
+                	<span id="credit"></span>
+                </div>
+                <div class="contentTitle">
+                	<img src="iconHome.png" width="15" height="15" alt=""/>
+					<span class="bold small-text">Modern</span>
+                </div>   
+                <div class="contentMore">
+                	<span class="small-text">neuhausel asked: Diementions of the lumber - "I really like the size of lumber used on the project. Are ...</span>                    
+                </div>
+                <div class="time-likes">
+                	<span class="time small-text"> 6 hours ago
+                    </span>
+                    <span class="likes small-text"> 9.3K Saves | 4 Questions
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

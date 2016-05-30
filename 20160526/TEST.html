@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<style>
+	/* Pseudo Elements */
+	a {text-decoration:none; font-size:30px; margin:14px;}
+	a:link{background:#96191B; color:#0CAAC4}
+	a:hover{background-color:#097246; color:#117255;}
+	a:active{border: 1px solid green}
+	a:visited{background-color:#15E44D;}
+	
+	.menu {background-color: #999; width:100%; border-radius:5px;}
+	ul.menu>li {display:inline-block; float:left; width:10%; font-size:18px; background-color:#0DC7D0; border:thin black; text-align:center; margin:5px;}
+	.submenu {display:none; list-style-type:none; width:100%;}
+	
+	li:hover>ul{display:block;}
+	ul.submenu>li{width:100%; text-align:center; position:relative; left:-40px; border:1px dashed black;}
+	
+	div {width:100%; float:left; display:block;}
+	/* Pseudo Elements */
+	
+	/*p:first-line {font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif; font-size:24px;}
+	p:first-child {color:#0F9F12;}*/
+	
+	/* 
+	- Con thu n cua tag 
+	- odd/ even: tat ca child chan/le	
+	*/
+	p:nth-child(3) {}
+	p:before{}
+	p:after{}
+	
+	/* Zoom in CSS - Not recommend */
+	
+</style>
+
+</head>
+
+<body>
+	<a href="https://google.com">Link 1</a>
+	<a href="https://yahoo.com">Link 2</a>
+	<a href="https://fb.com">Link 3</a>
+	<a href="https://youtube.com">Link 4</a>  
+    
+    <div id="Menu">
+    	<ul class="menu">
+        	<li>Home</li>
+            <li>Products
+            	<ul class="submenu">
+                	<li>Meat</li>
+                    <li>Egg</li>
+                </ul>
+            </li>
+            <li>Services
+            	<ul class="submenu">
+                	<li>Ship</li>
+                    <li>Fix bug</li>
+                </ul>
+            </li>                        	
+        </ul>
+    </div>   
+    
+    <div>
+    	<p>
+        	Hello World <br>
+            Anh bat yeu yeah <br>            
+        </p>
+    	<p>
+        	Hello World <br>
+            Anh bat yeu yeah <br>            
+        </p>
+    	<p>
+        	Hello World <br>
+            Anh bat yeu yeah <br>            
+        </p>        
+    </div>       
+</body>
+</html>

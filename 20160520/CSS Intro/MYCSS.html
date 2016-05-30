@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<style>
+	/* Basic selector */
+	H1 {color:#FF060A; background-color:#00FF05;}
+	.style_1 {color:#E512A2; background-color:#0367C4;}
+	#style2 {color:#9CA010; background-color:#B75E11; width:100px; height:100px;}
+	* {font-style:italic;}
+	.style_3 {text-decoration:overline;}
+	
+	/* Advanced selector */
+	p[align] {background-color:#DADADA;}
+	input[type='text'] {background-color:#A5E482;}
+	div > p {background-color:#218DDC;} /* Child of selector */
+	div b {color:#EBEA30;} /* Descendant of selector */
+	p.style_3 {text-decoration:overline;}	/* Rang buoc tren tag */
+	div.style_1 p {...} /* Anh huong p la hau due cua Div co su dung style_1 */
+	
+	/* Vua su dung Class, vua ID --> Su dung ID (neu mau thuan nhau) */
+	
+</style>
+
+</head>
+
+<body>
+	<h1 class="style_1 style_3">Mua Thang Sau</h1>
+    <p class="style_1">Hello World</p>
+    <p class="style_1">Like love</p>
+    <div id="style2"><p>Lelelelelelelelelelele</p></div>
+    
+    <p align="right">Shit shit shit</p>
+    
+    <span>User: <input type="text" /></span>
+    <span>Pass: <input type="password" /></span>    
+</body>
+</html>
