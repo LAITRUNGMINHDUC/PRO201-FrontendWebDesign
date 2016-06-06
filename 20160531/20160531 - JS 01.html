@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS</title>
+
+<script>
+	function Func1()
+	{		
+		var s = prompt("Type color to change: ");
+		var tag = document.getElementById("forFunc1");
+		tag.style.color = s;
+	}
+	
+	function Func2()	
+	{
+		var s1 = prompt("Image name: ");
+		var s2 = prompt("Height: ");
+		var s3 = prompt("Width: ");
+		
+		var tag = document.getElementById("forFunc2");
+		tag.src = s1;
+		tag.width = s3;
+		tag.height = s2;
+	}
+	
+	function Func3()
+	{
+		var s1 = prompt("Color: ");
+		var s2 = confirm("Want to change background?");
+		if (s2==true)
+		{
+			var tag = document.getElementById("forFunc3");
+			tag.bgColor = s1;
+		}
+	}
+	
+	function Func4()
+	{
+		var s = prompt("Film name: ");
+		var tag = document.getElementById("forFunc4");
+		tag.src = s;	
+	}
+	
+	function Func5()
+	{
+		var s1 = prompt("Name: ");
+		var s2 = prompt("ID: ");
+		var s3 = prompt("Pass: ");				
+		
+		var t1 = document.getElementById("textfield");
+		var t2 = document.getElementById("textfield2");
+		var t3 = document.getElementById("textfield3");
+		
+		t1.value = s1;
+		t2.value = s2;
+		t3.value = s3;
+		
+		t1.style.backgroundColor = "yellow";
+		t2.style.backgroundColor = "yellow";
+		t3.style.backgroundColor = "yellow";									
+		
+		t1.style.border = "none";
+		t2.style.border = "none";
+		t3.style.border = "none";				
+		
+		t1.style.textAlign = "right";
+		t2.style.textAlign = "right";
+		t3.style.textAlign = "right";		
+		
+		t1.style.fontSize = "16px";				
+		t2.style.fontSize = "16px";				
+		t3.style.fontSize = "16px";									
+		
+		var t4 = document.getElementById("form1");
+		t4.style.backgroundColor = "red";	
+		
+	}			
+	
+</script>
+
+</head>
+
+<body id="forFunc3">
+	<p id="forFunc1">Lorem ipsum love la la bla bla</p>
+    <img id="forFunc2" src="" width="" height=""/>
+<video>
+    	<source id="forFunc4" src="">
+    </video>
+    
+<form id="form1" name="form1" method="post">
+<label for="textfield">Name:</label>
+<input type="text" name="textfield" id="textfield">
+<br>
+<label for="textfield2">ID:</label>
+<input type="text" name="textfield2" id="textfield2">
+<br>
+<label for="textfield3">Pass:</label>
+<input type="text" name="textfield3" id="textfield3">
+</form>
+
+<br><br>
+<button onClick="Func1()">Func1</button>
+<button onClick="Func2()">Func2</button>
+<button onClick="Func3()">Func3</button>
+<button onClick="Func4()">Func4</button>
+<button onClick="Func5()">Func5</button>
+</body>
+</html>

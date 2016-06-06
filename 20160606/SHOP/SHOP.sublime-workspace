@@ -1,0 +1,628 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"the",
+				"theInput"
+			],
+			[
+				"get",
+				"getItem"
+			],
+			[
+				"lo",
+				"localStorage"
+			],
+			[
+				"Store",
+				"StoreDatabase"
+			],
+			[
+				"R",
+				"Requests"
+			],
+			[
+				"p",
+				"provider"
+			],
+			[
+				"chec",
+				"checkProvider"
+			],
+			[
+				"set",
+				"setupEthernet"
+			],
+			[
+				"se",
+				"setupMotorOutput"
+			],
+			[
+				"setup",
+				"setupServo"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"sca",
+				"scale()"
+			],
+			[
+				"bor",
+				"border-left-width"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"DI",
+				"display"
+			],
+			[
+				"S",
+				"sans-serif"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"Re",
+				"Request"
+			],
+			[
+				"ent",
+				"entities"
+			],
+			[
+				"qu",
+				"Query"
+			],
+			[
+				"en",
+				"entities"
+			],
+			[
+				"error_",
+				"error_message"
+			],
+			[
+				"ta",
+				"tableClient"
+			],
+			[
+				"tab",
+				"tableName"
+			],
+			[
+				"Pr",
+				"PropertyName"
+			],
+			[
+				"do",
+				"Document"
+			],
+			[
+				"onc",
+				"onclick	Attr"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"sc",
+				"scroll"
+			],
+			[
+				"i",
+				"img	Tag"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"jso",
+				"json_encode"
+			],
+			[
+				"con",
+				"connectionString"
+			],
+			[
+				"exit",
+				"exist"
+			],
+			[
+				"MS",
+				"MS_DP_UserCode"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"U",
+				"University"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "vidu29.html",
+			"settings":
+			{
+				"buffer_size": 1302,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "giohang.js",
+			"settings":
+			{
+				"buffer_size": 2779,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "xemGio.html",
+			"settings":
+			{
+				"buffer_size": 381,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Henry/Documents/GitHub/FPT-FrontEnd-Web/20160606/SHOP"
+	],
+	"file_history":
+	[
+		"/C/Users/Henry/Documents/GitHub/MSPVN/app/Http/Controllers/TestAzure.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/app/Http/Kernel.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/app/Http/Middleware/HttpsProtocol.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/app/Http/Controllers/StoreDatabase.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/app/Http/routes.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/resources/views/HTML/form.blade.php",
+		"/C/Users/Henry/Documents/GitHub/FPT-FrontEnd-Web/20160606/SHOP/giohang.js",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/.env",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/app/Http/Controllers/SocialAuth.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/app/Console/Kernel.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/resources/views/HTML/login.blade.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/composer.json",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/public/assets/css/style1.css",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/public/assets/css/style.css",
+		"/C/Users/Henry/Desktop/bootstrap-login-forms/form-3/index.html",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/public/assets/css/form-elements.css",
+		"/C/Users/Henry/Desktop/bootstrap-login-forms/form-3/form.html",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/resources/views/components/form/text.blade.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/config/app.php",
+		"/C/Users/Henry/Desktop/bootstrap-login-forms/form-1/index.html",
+		"/C/Users/Henry/Desktop/bootstrap-login-forms/form-1 - Copy/index.html",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/vendor/socialiteproviders/manager/src/OAuth2/AbstractProvider.php",
+		"/C/Users/Henry/Documents/MSP/CustomPHP.ini",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/app/Providers/EventServiceProvider.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/vendor/socialiteproviders/google/src/Provider.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/vendor/laravel/socialite/src/Two/GoogleProvider.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/vendor/laravel/socialite/src/Contracts/Provider.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/vendor/laravel/socialite/src/Facades/Socialite.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/vendor/laravel/socialite/src/Contracts/Factory.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/vendor/socialiteproviders/microsoft-live/src/Provider.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/vendor/laravel/socialite/src/Contracts/User.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/vendor/laravel/socialite/src/SocialiteManager.php",
+		"/C/Users/Henry/Documents/GitHub/MSPVN/vendor/socialiteproviders/google/src/GoogleExtendSocialite.php",
+		"/C/Users/Henry/Documents/MSP/cacert.pem",
+		"/C/Users/Henry/Desktop/bootstrap-login-forms/form-1/assets/css/style.css",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/composer.json",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/.env",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/app/Http/Controllers/SocialAuth.php",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/config/app.php",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/app/Http/routes.php",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/app/Providers/EventServiceProvider.php",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/config/services.php",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/resources/views/layouts/app.blade.php",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/resources/views/HTML/login.blade.php",
+		"/C/Users/Henry/Desktop/bootstrap-login-forms/form-1/assets/css/form-elements.css",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/app/Classes/CustomAzure.php",
+		"/C/Users/Henry/Downloads/corlate-free-responsive-business-html-template/index.html",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/config/auth.php",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/app/Http/Controllers/HomeController.php",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/app/Http/Controllers/Controller.php",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/resources/views/welcome.blade.php",
+		"/C/Users/Henry/Documents/MSP/NOTE MSP 2.txt",
+		"/C/Users/Henry/Documents/MSP/NOTE MSP.txt",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/app/Classes/MinhDuc.php",
+		"/C/Users/Henry/Documents/GitHub/LaravelAzureSDK/app/Http/Controllers/TestAzure.php",
+		"/C/Users/Henry/Documents/MSP/TRUCCHI.ino",
+		"/C/Users/Henry/Documents/MSP/ĐỔI SỐ TỪ BIN, HEX, OCT SANG DEC.txt",
+		"/C/Users/Henry/Documents/MSP/DE JS.txt",
+		"/C/Users/Henry/Documents/GitHub/FPT-FrontEnd-Web/20160601/BT.html",
+		"/C/Users/Henry/Downloads/Maincode.CPP",
+		"/C/Users/Henry/Downloads/Maincodeblack.cpp",
+		"/C/Users/Henry/Downloads/DatafromInternet.ino",
+		"/C/Users/Henry/Documents/MSP/TRUCCHI.c",
+		"/C/Users/Henry/Downloads/arduino/Ethernet.ino",
+		"/C/Users/Henry/Downloads/arduino/COMBINE/function.cpp",
+		"/C/Users/Henry/Downloads/arduino/COMBINE/setup.cpp",
+		"/C/Users/Henry/Downloads/arduino/COMBINE/define.cpp",
+		"/C/Users/Henry/Downloads/arduino/Servo_360.ino",
+		"/C/Users/Henry/Downloads/arduino/COMBINE/loop.cpp",
+		"/C/Users/Henry/Documents/GitHub/FPT-FrontEnd-Web/20160531/20160531 - JS 01.html",
+		"/C/Users/Henry/Documents/GitHub/FPT-FrontEnd-Web/20160531/TEST.html",
+		"/C/Users/Henry/Downloads/arduino/L298n.ino",
+		"/C/Users/Henry/Documents/GitHub/FPT-FrontEnd-Web/20150530/LAB06.html",
+		"/C/Users/Henry/Documents/GitHub/FPT-FrontEnd-Web/20160527/LAB05-2.html",
+		"/C/Users/Henry/Documents/GitHub/FPT-FrontEnd-Web/PROJECT/HOUZZ/Houzz - Home Design, Decorating and Remodeling Ideas and Inspiration, Kitchen and Bathroom Design.htm",
+		"/C/Users/Henry/Desktop/Test-Azure-Table-Storage-API.txt",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/app/Http/Kernel.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/app/Http/Controllers/TestAzure.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/app/Http/routes.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/app/Classes/CustomAzure.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/vendor/microsoft/azure-storage/samples/TableSamples.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/composer.json",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/.env",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/MicrosoftAzure/Storage/Common/ServicesBuilder.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/app/Classes/MinhDuc.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/MicrosoftAzure/Storage/CustomMSAzure.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/MicrosoftAzure/Storage/Table/TableRestProxy.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/vendor/microsoft/azure-storage/samples/QueueSamples.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/vendor/microsoft/azure-storage/samples/BlobSamples.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/config/app.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/MicrosoftAzure/Storage/Blob/BlobRestProxy.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/vendor/laravel/framework/src/Illuminate/Http/Request.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php",
+		"/C/Users/Henry/Desktop/TABLESTORAGE/Common/CloudConfigurationManager.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/vendor/microsoft/windowsazure/WindowsAzure/WindowsAzure.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/vendor/laravel/framework/src/Illuminate/MicrosoftAzure/Storage/Common/Internal/Authentication/IAuthScheme.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/vendor/laravel/framework/src/Illuminate/MicrosoftAzure/Storage/Common/CloudConfigurationManager.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/vendor/laravel/framework/src/Illuminate/MicrosoftAzure/Storage/Common/ServiceException.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/vendor/laravel/framework/src/Illuminate/MicrosoftAzure/Storage/Common/ServicesBuilder.php",
+		"/C/Users/Henry/Documents/GitHub/OriginalLaravel5-2/app/Http/Controllers/Controller.php",
+		"/C/XAMPP/htdocs/PHP-AZURE-STORAGE/QuerySingleEntity.php",
+		"/C/XAMPP/htdocs/PHP-AZURE-STORAGE/ConnectDB.php",
+		"/C/XAMPP/htdocs/PHP-AZURE-STORAGE/vendor/microsoft/windowsazure/examples/Client/CloudTable.php",
+		"/C/XAMPP/htdocs/PHP-AZURE-STORAGE/vendor/microsoft/azure-storage/samples/TableSamples.php",
+		"/C/Users/Henry/Documents/GitHub/FPT-FrontEnd-Web/20160525/LAYOUTPOSITION.html",
+		"/C/Users/Henry/Documents/GitHub/FPT-FrontEnd-Web/20160525/LAYOUTJS.html",
+		"/C/Users/Henry/Documents/GitHub/Slim-3.x/Slim-3.x/composer.json",
+		"/C/XAMPP/htdocs/PHP-AZURE-STORAGE/AddSingleEntity.php",
+		"/C/XAMPP/htdocs/PHP-AZURE-STORAGE/CreateTable.php",
+		"/C/XAMPP/htdocs/PHP-AZURE-STORAGE/vendor/microsoft/azure-storage/README.md",
+		"/C/XAMPP/htdocs/PHP-AZURE-STORAGE/vendor/autoload.php",
+		"/C/XAMPP/htdocs/PHP-AZURE-STORAGE/composer.json",
+		"/C/XAMPP/htdocs/TRUCCHI/API/DeviceRequest.php",
+		"/C/XAMPP/htdocs/TRUCCHI/API/DefaultData.php",
+		"/C/XAMPP/htdocs/TRUCCHI/API/DeviceAnswer.php",
+		"/C/XAMPP/htdocs/TRUCCHI/API/CustomerRequest.php",
+		"/C/XAMPP/htdocs/TRUCCHI/WEBSITE/index.html",
+		"/C/XAMPP/htdocs/TRUCCHI/API/Database.php",
+		"/C/Users/Henry/Desktop/WordPress SQLite.txt",
+		"/C/Users/Henry/Documents/GitHub/FPT-FrontEnd-Web/20160511/LAB1/site.html",
+		"/C/Users/Henry/Documents/FPT CMS",
+		"/C/Users/Henry/Documents/GitHub/MSPCodeDreamSpark/.env",
+		"/C/Users/Henry/Documents/GitHub/MSPCodeDreamSpark/app/Http/routes.php",
+		"/C/Users/Henry/Documents/GitHub/MSPCodeDreamSpark/app/Http/Controllers/Microsoft.php",
+		"/C/Users/Henry/Documents/GitHub/MSPCodeDreamSpark/app/MS_DP_UserCode.php",
+		"/C/Users/Henry/Documents/GitHub/MSPCodeDreamSpark/app/MS_DP_Code.php",
+		"/C/Users/Henry/Documents/GitHub/MSPCodeDreamSpark/config/app.php",
+		"/C/Users/Henry/Documents/GitHub/MSP DreamSpark Code/.env"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bo",
+			"||",
+			"XEM",
+			"hover",
+			"text-align:",
+			"text-a",
+			"text",
+			"!!",
+			", 'required' => 'required'",
+			"getAccessToken",
+			"getAccessToken()",
+			"http:",
+			"{{ url('/') }}assets",
+			"asset",
+			"green",
+			"timer1",
+			"timer1c",
+			"time",
+			"$connectionString",
+			"MicrosoftAzure\\Storage\\",
+			"curl",
+			"certif",
+			"cert",
+			"my",
+			"khuong"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"{",
+			"",
+			"https:",
+			"{{ url('/') }}/assets",
+			"{{ url('/') }}.asset",
+			"mytime",
+			"Illuminate\\MicrosoftAzure\\Storage\\"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "vidu29.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1278,
+								1278
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 829.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "giohang.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1759,
+								1759
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2131.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "xemGio.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								356,
+								356
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "SHOP.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

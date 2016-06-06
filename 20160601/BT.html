@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script language="javascript">
+	function Func1()
+	{
+		var S = "";
+		var n = parseInt(prompt("How many products?", 0));
+		var i = 0;
+		for (i=1; i<=n; i++)
+		{
+			var S1 = prompt("ID " + i + ": ");
+			var S2 = prompt("Name " + i + ": ");
+			var S3 = prompt("Photo " + i + ": ");
+			var S4 = prompt("Price " + i + ": ");
+			var S5 = prompt("Quantity " + i + ": ");																
+			alert("Finish " + i + " Products");
+			
+			S = S + "<tr>";
+			S = S + "<td>" + S1 + "</td>";
+			S = S + "<td>" + S2 + "</td>";
+			S = S + "<td>" + S3 + "</td>";
+			S = S + "<td>" + S4 + "</td>";						
+			S = S + "<td>" + S5 + "</td>";		
+			S = S + "</tr>";					
+		}
+		
+		var tag1 = document.getElementById("listProducts");
+		tag1.innerHTML = S;		
+		var tag2 = document.getElementById("table1");
+		tag2.hidden = "";
+	}
+	
+	function Func2()
+	{
+		var n = parseInt(prompt("N = ?"));
+		var S = "";
+		for (var i = 1; i<=n; i++)
+		{
+			var S1 = prompt("Link " + i + " : ");
+			S = S + "<a href='"+S1+"' onClick='openAudio("+S1+")'>" + S1 + "</a> <br>";
+		}
+		var tag = document.getElementById("listnhac");
+		tag.innerHTML = S;
+	}
+	
+</script>
+</head>
+
+<body>
+<!-- Function 1 -->
+<input type="button" value="Function 1" onClick="Func1();">
+<table width="200" border="1" hidden="hidden" id="table1">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Photo</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+    </tr>
+   </thead> 
+   <tbody id="listProducts">
+  </tbody>
+</table>
+
+<!-- Function 2 -->
+<input type="button" value="Function 2" onClick="Func2();">
+<div id="listnhac"></div>
+
+<!-- Function 3 -->
+
+</body>
+</html>

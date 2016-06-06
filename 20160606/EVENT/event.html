@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	function demo1(theInput) {
+		if (event.keyCode >= 48 && event.keyCode <= 57)
+		{
+			alert("ahihi");
+		}
+	}
+
+	function demo2() {
+		var x = event.clientX;
+		var y = event.clientY;		
+		var tag = document.getElementById('pho');
+
+		tag.style.left = x + "px";
+		tag.style.top = y + "px";		
+		tag.style.position = "absolute";
+	}
+
+	function demo3(tag_div) {
+		var tag_b = document.getElementById('nut');
+		var y = tag_div.offsetHeight;
+		tag_b.value = y;		
+	}
+</script>
+
+<style type="text/css">
+	p {
+		width: 30px;
+		background-color: yellow;
+	}
+	#d2 {
+		height: 200px;
+		background-color: black;
+	}
+	#d3 {
+		background-color: pink;
+		overflow: scroll;
+		height: 200px;
+	}
+</style>
+</head>
+<body>
+<input type="text" onkeypress="demo1(this)" />
+
+<div id="d2" onmousemove="demo2()">
+	<p id="pho"> my Text </p>
+</div>
+
+<input type="text" id="nut" />
+
+<div id="d3" onscroll="demo3(this)">
+	<pre>
+	Lorem ipsum <br>
+		Lorem ipsum <br>
+			Lorem ipsum <br>
+				Lorem ipsum <br>
+	Lorem ipsum <br>
+		Lorem ipsum <br>
+			Lorem ipsum <br>			
+	</pre>			
+</div>
+
+</body>
+</html>

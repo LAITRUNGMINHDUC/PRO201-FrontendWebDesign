@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+div { background-color:#CCC; width:40%;}
+</style>
+<script src="giohang.js"></script>
+
+</head>
+
+<body onload="init()">
+<a href="xemGio.html"> xem gio hang</a>
+<div>
+  ma: 1<br />
+  ten: quan ao<br/>
+  <img src="resource/logo.jpg" /><br />
+  gia: 1000<br />
+  size <select id="size" onchange="getSize(this);">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+       </select>
+  <input type="button" value="mua" onclick="add(1,'quan ao','logo.jpg',1000)" />;
+ 
+   
+</div>
+<hr />
+<div>
+  ma: 2<br />
+  ten: luao<br/>
+  <img src="resource/dentat.JPG" /><br />
+  gia: 500<br />
+   size <select id="size2" onchange="getSize(this);">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+       </select>
+  <input type="button" value="mua" onclick="add(2,'lua','dentat.jpg',500)" />;
+</div>
+<hr />
+<div>
+  ma: 3<br />
+  ten: dep<br/>
+  <img src="resource/Main3.jpg"/><br />
+  gia: 1000<br />
+  <input type="button" value="mua">
+   
+</div>
+</body>
+</html>
