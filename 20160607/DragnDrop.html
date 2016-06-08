@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #d2 {
+            margin-left: 30px;
+        }
+        
+        p:hover {
+            cursor: pointer;}
+    </style>
+
+    <script>
+        function store() {
+            var the = event.target;
+            event.dataTransfer.setData("key",the.id);
+        }
+
+        function open2()
+        {
+            event.preventDefault();
+        }
+        
+        function layra() {
+            event.preventDefault();
+            var id = event.dataTransfer.getData("key");
+            var tag = document.getElementById(id);
+            var tag_div = event.target;
+            tag_div.appendChild(tag);
+        }
+    </script>
+</head>
+<body>
+    <div id="d1">
+        <p draggable="true" id="pho" ondragstart="store()">Hello Summer</p>
+    </div>
+    <div id="d2" ondragover="open2()" ondrop="layra()"></div>
+</body>
+</html>

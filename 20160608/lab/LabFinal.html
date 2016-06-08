@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab Final</title>
+	<script type="text/javascript">
+		var currentImg;	
+		function imgClick(myImg)
+		{
+			var show = document.getElementById("show");
+			show.style.display = 'block';
+			var divImg = document.getElementById("bigImg");
+			currentImg = myImg.name;
+			divImg.style.backgroundImage = "url(Resource/" + currentImg + ".PNG)";
+			
+			var butnext = document.getElementById("next");
+			var butback = document.getElementById("back");			
+			
+			if (currentImg == 1)
+			{
+				butback.style.display = 'none';
+				butnext.style.display = 'block';					
+			}
+			if (currentImg == 4)
+			{
+				butback.style.display = 'block';
+				butnext.style.display = 'none';					
+			}	
+		}
+		
+		function butNext()
+		{
+			var divImg = document.getElementById("bigImg");
+			var butnext = document.getElementById("next");
+			var butback = document.getElementById("back");					
+			if (currentImg == 4) 
+			{
+				butnext.style.display = 'none';
+				butback.style.display = 'block';
+			}
+			else 
+			{
+				butnext.style.display = 'block';
+				butback.style.display = 'block';							
+				currentImg = parseInt(currentImg) + 1;
+				divImg.style.backgroundImage = "url(Resource/" + currentImg + ".PNG)";
+				if (currentImg == 4)
+				{
+					butnext.style.display = 'none';
+					butback.style.display = 'block';
+				}									
+			}
+		}
+		
+		function butBack()
+		{
+			var divImg = document.getElementById("bigImg");
+			var butnext = document.getElementById("next");
+			var butback = document.getElementById("back");			
+			if (currentImg == 1) 
+			{
+				butback.style.display = 'none';
+				butnext.style.display = 'block';
+			}
+			else 
+			{
+				butnext.style.display = 'block';
+				butback.style.display = 'block';				
+				currentImg = parseInt(currentImg) - 1;				
+				divImg.style.backgroundImage = "url(Resource/" + currentImg + ".PNG)";
+				if (currentImg == 1)
+				{
+					butback.style.display = 'none';
+					butnext.style.display = 'block';					
+				}				
+			}
+		}	
+		
+		function butClose()
+		{
+			var show = document.getElementById("show");	
+			show.style.display = 'none';		
+		}
+		
+		
+	</script>
+	<style type="text/css">
+		#small>img { width: 20%; float: left; height: 12%; margin: 2px; border: 5px solid green;}
+		#small { position:relative; z-index: 0; margin: 20px;}
+		#show {position:relative; z-index: 1; display:none; padding: 50px; background-color:#6A5A5B; height: 600px;}		
+		#bigImg {height: 540px; background-repeat:no-repeat;}
+		#next {position: relative; z-index:2; left: -900px; display:inline-block;}
+		#back {position: relative; z-index:2; left: -400px; display:inline-block;}		
+
+	</style>
+</head>
+<body>
+	<div id="container">
+    	<div id="small">
+            <img src="Resource/1.PNG" name="1" width="960" height="540" onClick="imgClick(this)" alt=""/>
+            <img src="Resource/2.PNG" name="2" width="960" height="540" onClick="imgClick(this)" alt=""/>
+            <img src="Resource/3.PNG" name="3" width="960" height="540" onClick="imgClick(this)" alt=""/>
+            <img src="Resource/4.PNG" name="4" width="960" height="540" onClick="imgClick(this)" alt=""/>
+        </div>
+        <div id="show">
+        	<div id="bigImg">
+                <input type="button" id="next" value="Next" onClick="butNext()">
+                <input type="button" id="back" value="Back" onClick="butBack()">                        				
+            </div>
+            <br>
+            <input type="button" id="close" value="Close" onClick="butClose()"/>
+        </div>        
+	</div>
+</body>
+</html>
