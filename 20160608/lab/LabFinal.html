@@ -9,11 +9,15 @@
 			var show = document.getElementById("show");
 			show.style.display = 'block';
 			var divImg = document.getElementById("bigImg");
-			currentImg = myImg.name;
-			divImg.style.backgroundImage = "url(Resource/" + currentImg + ".PNG)";
+			currentImg = parseInt(myImg.name);
+			divImg.style.backgroundImage = "url(Resource/" + currentImg + ".PNG)";					
 			
 			var butnext = document.getElementById("next");
-			var butback = document.getElementById("back");			
+			var butback = document.getElementById("back");						
+			console.log(currentImg);
+
+			butback.style.display = 'block';
+			butnext.style.display = 'block';									
 			
 			if (currentImg == 1)
 			{
@@ -41,7 +45,7 @@
 			{
 				butnext.style.display = 'block';
 				butback.style.display = 'block';							
-				currentImg = parseInt(currentImg) + 1;
+				currentImg = currentImg + 1;
 				divImg.style.backgroundImage = "url(Resource/" + currentImg + ".PNG)";
 				if (currentImg == 4)
 				{
@@ -79,6 +83,7 @@
 		{
 			var show = document.getElementById("show");	
 			show.style.display = 'none';		
+			currentImg = 0;
 		}
 		
 		
@@ -88,8 +93,6 @@
 		#small { position:relative; z-index: 0; margin: 20px;}
 		#show {position:relative; z-index: 1; display:none; padding: 50px; background-color:#6A5A5B; height: 600px;}		
 		#bigImg {height: 540px; background-repeat:no-repeat;}
-		#next {position: relative; z-index:2; left: -900px; display:inline-block;}
-		#back {position: relative; z-index:2; left: -400px; display:inline-block;}		
 
 	</style>
 </head>
@@ -102,9 +105,9 @@
             <img src="Resource/4.PNG" name="4" width="960" height="540" onClick="imgClick(this)" alt=""/>
         </div>
         <div id="show">
-        	<div id="bigImg">
                 <input type="button" id="next" value="Next" onClick="butNext()">
-                <input type="button" id="back" value="Back" onClick="butBack()">                        				
+                <input type="button" id="back" value="Back" onClick="butBack()">                       
+        	<div id="bigImg">
             </div>
             <br>
             <input type="button" id="close" value="Close" onClick="butClose()"/>

@@ -1,0 +1,60 @@
+@media screen and (max-device-width: 736px)
+{
+	html,
+	body,
+	#container {
+	    margin: 0px;
+	    padding: 0px;
+		overflow:hidden;
+	    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	}
+	section {height: 100vh; width:100vw; text-align: center;}
+	p {
+	    color: #FFFFFF;	    
+	    margin-top: 0;
+	    margin-left: 20px;
+	    margin-right: 20px;
+	}	
+	a {
+	    text-decoration: none;
+	    font-weight: bolder;
+	}
+
+	.transperent {
+	    background: #000000;
+	    opacity: 0.6;
+	    position: absolute;
+	    z-index: 0;
+	}
+
+	.content {
+	    position: absolute;
+	    margin: auto;
+	    margin-top: 50px;
+	    z-index: 1;
+	}
+
+	.orange {
+	    background-color: #FB7500;
+	    color: #FFFFFF;
+	}
+	.white {
+	    background-color: #FFFFFF;
+	    color: #000000;
+	}
+
+	.btn {
+	    padding: 15px;
+	    padding-left: 30px;
+	    padding-right: 30px;
+	    border-radius: 300px;
+	    margin: 70px;
+		margin-left: 200px;
+	    float: left;
+	    width: 20%;
+	}
+	
+
+
+
+}

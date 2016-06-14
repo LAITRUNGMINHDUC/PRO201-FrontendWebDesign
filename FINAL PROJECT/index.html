@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quiz Harry Potter</title>
+
+<script src="resources/js/jquery-3.0.0.min.js"></script>
+<script src="resources/js/makeDatabase.js"></script>
+<script src="resources/js/custom.js"></script>
+<script src="resources/js/customjQuery.js"></script>
+
+<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+<!-- <link rel="stylesheet" type="text/css" href="resources/css/mobile.css"> -->
+
+<script>
+	$(document).ready(function() {		
+		renderData();	
+		smoothlyScroll();
+		scrollToTop();
+		clickResult();
+		setInterval(changeBackgroundImg, 3000);	
+	});			
+</script>
+<audio autoplay>
+	<source src="resources/Harry.mp3"/>
+</audio>
+</head>
+
+<body>
+	<div id="container">
+    	<section id="landing" class="background2">
+        	<section class="content">
+	            <p>BẠN LÀ AI TRONG THẾ GIỚI CỦA </p>
+                <img id="header" src="resources/img/TEXT1.png" width="40%" alt=""/>
+                <div class="navigation">            
+                    <a href="#instruction" class="btn white">HƯỚNG DẪN</a>
+					<a href="#getName" class="btn orange">BẮT ĐẦU</a>
+                </div>
+            </section>
+        	<section class="transperent"></section>
+        </section>
+
+        <section id="instruction" class="background">
+        	<section class="content">
+                 <p>
+                    Đây là Final Project của Lại Trung Minh Đức <br>
+                    SE62220 - FPT University <br>
+                    Môn: Front End Web Development.
+                 </p>
+                 <h1> Cách chơi </h1>                 
+                 <span>
+						B1: Điền tên và nhấn "Chơi" <br>
+                        B2: Trả lời các câu hỏi <br>
+                        B3: Nhấn "Xem Kết Quả" <br>
+                        B4: Nhấn vô hình Result để chơi tiếp  <br>                                           
+                 </span>
+                <div class="navigation">                                
+					<a href="#getName" class="btn orange center">BẮT ĐẦU</a>
+                </div>                 
+             </section>
+             <section class="transperent"></section>
+        </section>
+        
+        <section id="getName" class="background2">
+        	<section class="content">
+	            <p>Tên bạn là: </p>
+                <input id="name" type="text" placeholder="Khỏi điền cũng được">
+                <div class="navigation">
+					<span onClick="clickResult();"><a href="#Cau1" id="play" class="btn orange">CHƠI</a></span>
+                </div>
+            </section>
+        	<section class="transperent"></section>        	
+        </section>
+        
+		<div id="questionsBlock">
+        </div>
+        
+        <section id="Cau6" name="loading" class="background2">
+                <div class="navigation">
+					<a href="#result" class="btn orange" id="clickResult">XEM KẾT QUẢ</a>
+                </div>        	            
+        </section>
+        
+        <section id="result" class="background">
+        	<section class="content">
+            	<p id="resultText"></p>
+	        	<a href="#getName"><img id="resultImg" src="resources/img/RESULT/Voldemort.jpg" width="50%" alt=""/></a>
+            </section>
+			<section class="transperent"></section>        	            
+        </section>
+        
+    </div>
+</body>
+</html>
