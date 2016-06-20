@@ -35,5 +35,3 @@ function changeBackgroundImg()
 	$('.background').css('background-image', 'url(resources/img/BACKGROUND/'+Rand+'.jpg)');
 	$('.background2').css('background-image', 'url(resources/img/BACKGROUND2/'+Rand+'.jpg)');	
 }
-
-
